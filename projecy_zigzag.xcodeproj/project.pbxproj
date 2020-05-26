@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E8264E6CCF80960B34C27C1 /* Pods_projecy_zigzag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D08E4CE2CFBDF03ADCA2706 /* Pods_projecy_zigzag.framework */; };
+		FF64545A247CF51000744B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF645459247CF51000744B83 /* AppDelegate.swift */; };
+		FF64545C247CF51000744B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64545B247CF51000744B83 /* SceneDelegate.swift */; };
+		FF64545E247CF51000744B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64545D247CF51000744B83 /* ViewController.swift */; };
+		FF645461247CF51000744B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF64545F247CF51000744B83 /* Main.storyboard */; };
+		FF645464247CF51000744B83 /* projecy_zigzag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF645462247CF51000744B83 /* projecy_zigzag.xcdatamodeld */; };
+		FF645466247CF51200744B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF645465247CF51200744B83 /* Assets.xcassets */; };
+		FF645469247CF51200744B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF645467247CF51200744B83 /* LaunchScreen.storyboard */; };
+		FF645475247D14BC00744B83 /* registerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF645474247D14BC00744B83 /* registerView.swift */; };
+		FF645479247D4BFE00744B83 /* floatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF645478247D4BFE00744B83 /* floatTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D08E4CE2CFBDF03ADCA2706 /* Pods_projecy_zigzag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projecy_zigzag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CE11442B765B93393EC50C /* Pods-projecy_zigzag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projecy_zigzag.debug.xcconfig"; path = "Target Support Files/Pods-projecy_zigzag/Pods-projecy_zigzag.debug.xcconfig"; sourceTree = "<group>"; };
+		F48AE8762423A1C5C0BB7751 /* Pods-projecy_zigzag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projecy_zigzag.release.xcconfig"; path = "Target Support Files/Pods-projecy_zigzag/Pods-projecy_zigzag.release.xcconfig"; sourceTree = "<group>"; };
+		FF645456247CF51000744B83 /* projecy_zigzag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projecy_zigzag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF645459247CF51000744B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF64545B247CF51000744B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF64545D247CF51000744B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF645460247CF51000744B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF645463247CF51000744B83 /* projecy_zigzag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = projecy_zigzag.xcdatamodel; sourceTree = "<group>"; };
+		FF645465247CF51200744B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF645468247CF51200744B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF64546A247CF51200744B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF645474247D14BC00744B83 /* registerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerView.swift; sourceTree = "<group>"; };
+		FF645478247D4BFE00744B83 /* floatTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floatTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF645453247CF51000744B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8264E6CCF80960B34C27C1 /* Pods_projecy_zigzag.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FAC0BFA23A6749B6BBA8B80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D08E4CE2CFBDF03ADCA2706 /* Pods_projecy_zigzag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60A2221D80EB46E493FE88D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74CE11442B765B93393EC50C /* Pods-projecy_zigzag.debug.xcconfig */,
+				F48AE8762423A1C5C0BB7751 /* Pods-projecy_zigzag.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF64544D247CF51000744B83 = {
+			isa = PBXGroup;
+			children = (
+				FF645458247CF51000744B83 /* projecy_zigzag */,
+				FF645457247CF51000744B83 /* Products */,
+				C60A2221D80EB46E493FE88D /* Pods */,
+				4FAC0BFA23A6749B6BBA8B80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF645457247CF51000744B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF645456247CF51000744B83 /* projecy_zigzag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF645458247CF51000744B83 /* projecy_zigzag */ = {
+			isa = PBXGroup;
+			children = (
+				FF645474247D14BC00744B83 /* registerView.swift */,
+				FF645478247D4BFE00744B83 /* floatTextField.swift */,
+				FF645459247CF51000744B83 /* AppDelegate.swift */,
+				FF64545B247CF51000744B83 /* SceneDelegate.swift */,
+				FF64545D247CF51000744B83 /* ViewController.swift */,
+				FF64545F247CF51000744B83 /* Main.storyboard */,
+				FF645465247CF51200744B83 /* Assets.xcassets */,
+				FF645467247CF51200744B83 /* LaunchScreen.storyboard */,
+				FF64546A247CF51200744B83 /* Info.plist */,
+				FF645462247CF51000744B83 /* projecy_zigzag.xcdatamodeld */,
+			);
+			path = projecy_zigzag;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF645455247CF51000744B83 /* projecy_zigzag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF64546D247CF51200744B83 /* Build configuration list for PBXNativeTarget "projecy_zigzag" */;
+			buildPhases = (
+				EF1180B2F3E5F9523B09BA7E /* [CP] Check Pods Manifest.lock */,
+				FF645452247CF51000744B83 /* Sources */,
+				FF645453247CF51000744B83 /* Frameworks */,
+				FF645454247CF51000744B83 /* Resources */,
+				4C5B706658202B9804BD8CC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = projecy_zigzag;
+			productName = projecy_zigzag;
+			productReference = FF645456247CF51000744B83 /* projecy_zigzag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF64544E247CF51000744B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "이진하";
+				TargetAttributes = {
+					FF645455247CF51000744B83 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = FF645451247CF51000744B83 /* Build configuration list for PBXProject "projecy_zigzag" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF64544D247CF51000744B83;
+			productRefGroup = FF645457247CF51000744B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF645455247CF51000744B83 /* projecy_zigzag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF645454247CF51000744B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF645469247CF51200744B83 /* LaunchScreen.storyboard in Resources */,
+				FF645466247CF51200744B83 /* Assets.xcassets in Resources */,
+				FF645461247CF51000744B83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5B706658202B9804BD8CC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projecy_zigzag/Pods-projecy_zigzag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projecy_zigzag/Pods-projecy_zigzag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-projecy_zigzag/Pods-projecy_zigzag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1180B2F3E5F9523B09BA7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-projecy_zigzag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF645452247CF51000744B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF64545E247CF51000744B83 /* ViewController.swift in Sources */,
+				FF645475247D14BC00744B83 /* registerView.swift in Sources */,
+				FF645479247D4BFE00744B83 /* floatTextField.swift in Sources */,
+				FF64545A247CF51000744B83 /* AppDelegate.swift in Sources */,
+				FF645464247CF51000744B83 /* projecy_zigzag.xcdatamodeld in Sources */,
+				FF64545C247CF51000744B83 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF64545F247CF51000744B83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF645460247CF51000744B83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF645467247CF51200744B83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF645468247CF51200744B83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF64546B247CF51200744B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF64546C247CF51200744B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF64546E247CF51200744B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CE11442B765B93393EC50C /* Pods-projecy_zigzag.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				INFOPLIST_FILE = projecy_zigzag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softsquared.ios.projecy-zigzag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF64546F247CF51200744B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48AE8762423A1C5C0BB7751 /* Pods-projecy_zigzag.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				INFOPLIST_FILE = projecy_zigzag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softsquared.ios.projecy-zigzag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF645451247CF51000744B83 /* Build configuration list for PBXProject "projecy_zigzag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF64546B247CF51200744B83 /* Debug */,
+				FF64546C247CF51200744B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF64546D247CF51200744B83 /* Build configuration list for PBXNativeTarget "projecy_zigzag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF64546E247CF51200744B83 /* Debug */,
+				FF64546F247CF51200744B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF645462247CF51000744B83 /* projecy_zigzag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF645463247CF51000744B83 /* projecy_zigzag.xcdatamodel */,
+			);
+			currentVersion = FF645463247CF51000744B83 /* projecy_zigzag.xcdatamodel */;
+			path = projecy_zigzag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF64544E247CF51000744B83 /* Project object */;
+}
