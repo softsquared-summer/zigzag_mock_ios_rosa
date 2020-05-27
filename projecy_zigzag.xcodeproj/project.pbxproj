@@ -17,6 +17,8 @@
 		FF645469247CF51200744B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF645467247CF51200744B83 /* LaunchScreen.storyboard */; };
 		FF645475247D14BC00744B83 /* registerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF645474247D14BC00744B83 /* registerView.swift */; };
 		FF645479247D4BFE00744B83 /* floatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF645478247D4BFE00744B83 /* floatTextField.swift */; };
+		FF64547B247D7EAC00744B83 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64547A247D7EAC00744B83 /* loginView.swift */; };
+		FFB2C48D247E3D9100A44577 /* register_successView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2C48C247E3D9100A44577 /* register_successView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FF64546A247CF51200744B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF645474247D14BC00744B83 /* registerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerView.swift; sourceTree = "<group>"; };
 		FF645478247D4BFE00744B83 /* floatTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floatTextField.swift; sourceTree = "<group>"; };
+		FF64547A247D7EAC00744B83 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		FFB2C48C247E3D9100A44577 /* register_successView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register_successView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				FF64545B247CF51000744B83 /* SceneDelegate.swift */,
 				FF64545D247CF51000744B83 /* ViewController.swift */,
 				FF64545F247CF51000744B83 /* Main.storyboard */,
+				FFB2C48C247E3D9100A44577 /* register_successView.swift */,
+				FF64547A247D7EAC00744B83 /* loginView.swift */,
 				FF645465247CF51200744B83 /* Assets.xcassets */,
 				FF645467247CF51200744B83 /* LaunchScreen.storyboard */,
 				FF64546A247CF51200744B83 /* Info.plist */,
@@ -217,8 +223,10 @@
 			files = (
 				FF64545E247CF51000744B83 /* ViewController.swift in Sources */,
 				FF645475247D14BC00744B83 /* registerView.swift in Sources */,
+				FF64547B247D7EAC00744B83 /* loginView.swift in Sources */,
 				FF645479247D4BFE00744B83 /* floatTextField.swift in Sources */,
 				FF64545A247CF51000744B83 /* AppDelegate.swift in Sources */,
+				FFB2C48D247E3D9100A44577 /* register_successView.swift in Sources */,
 				FF645464247CF51000744B83 /* projecy_zigzag.xcdatamodeld in Sources */,
 				FF64545C247CF51000744B83 /* SceneDelegate.swift in Sources */,
 			);

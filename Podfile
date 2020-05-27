@@ -7,5 +7,9 @@ target 'projecy_zigzag' do
 
   # Pods for projecy_zigzag
   pod 'RYFloatingInput'
-
+  pod 'Alamofire' , '~>4.7'
+  pod 'AlamofireNetworkActivityIndicator', '~> 2.3'
+  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'SwiftyJSON'
+  pod 'BEMCheckBox'
 end
