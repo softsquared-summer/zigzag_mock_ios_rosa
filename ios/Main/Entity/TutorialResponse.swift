@@ -8,6 +8,14 @@
 
 import ObjectMapper
 
+@available(iOS 13.0, *)
+
+let rightBarButtonItem: UIBarButtonItem = {
+    let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
+    barButtonItem.tintColor = UIColor.red
+    return barButtonItem
+}()
+
 
 
 var adImages = [
@@ -53,7 +61,7 @@ struct items {
     var item_image: itemImage!
     var is_free_ship: String!
     var is_heart: String!
-    var mail_name: String!
+    var mall_name: String!
     var item_name: String!
     var discount:String!
     var price: String!
@@ -72,7 +80,7 @@ extension items: Mappable {
         item_image <- map["item_image"]
         is_free_ship <- map["is_free_ship"]
         is_heart <- map["is_heart"]
-        mail_name <- map["mail_name"]
+        mall_name <- map["mall_name"]
         item_name <- map["item_name"]
         discount <- map["discount"]
         price <- map["price"]

@@ -11,6 +11,7 @@ import CoreData
 import AlamofireNetworkActivityIndicator
 import Firebase
 
+@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -32,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let tabbar = tabBarConntroller()
-        let splashViewController = SplashViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: tabbar)
 //        self.window?.rootViewController = UINavigationController(rootViewController: MainViewController())
         self.window?.makeKeyAndVisible()

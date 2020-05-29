@@ -32,7 +32,7 @@
                     <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </pageControl>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bik-3J-9IN">
-                    <rect key="frame" x="0.0" y="239" width="414" height="623"/>
+                    <rect key="frame" x="0.0" y="288" width="414" height="574"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wnH-89-fTY">
                         <size key="itemSize" width="128" height="128"/>
@@ -41,20 +41,29 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신을 위한 추천 아이템" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4G-LB-ho2">
+                    <rect key="frame" x="20" y="261" width="195.5" height="26"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="bik-3J-9IN" firstAttribute="top" secondItem="tRw-oO-tNg" secondAttribute="bottom" constant="23" id="3QV-2I-WTT"/>
                 <constraint firstItem="K3k-cf-XPP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="188" id="9qJ-Vh-S4Y"/>
+                <constraint firstItem="K3k-cf-XPP" firstAttribute="top" secondItem="tRw-oO-tNg" secondAttribute="bottom" id="Bga-EZ-5o4"/>
                 <constraint firstItem="tRw-oO-tNg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="E6J-BK-IT8"/>
                 <constraint firstItem="bik-3J-9IN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HIy-Bb-rrp"/>
                 <constraint firstItem="tRw-oO-tNg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QYN-Xj-3vp"/>
                 <constraint firstItem="bik-3J-9IN" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Qtn-9i-rRh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K3k-cf-XPP" secondAttribute="trailing" constant="187" id="Sl3-eN-78C"/>
                 <constraint firstItem="tRw-oO-tNg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZM8-dQ-TTF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="K3k-cf-XPP" secondAttribute="bottom" constant="609" id="bPw-2H-XTZ"/>
+                <constraint firstItem="S4G-LB-ho2" firstAttribute="top" secondItem="K3k-cf-XPP" secondAttribute="bottom" constant="8" id="bdS-G4-fU2"/>
                 <constraint firstItem="bik-3J-9IN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cFV-qi-DxR"/>
-                <constraint firstItem="K3k-cf-XPP" firstAttribute="top" secondItem="tRw-oO-tNg" secondAttribute="bottom" id="xx3-sl-TnU"/>
+                <constraint firstItem="bik-3J-9IN" firstAttribute="top" secondItem="S4G-LB-ho2" secondAttribute="bottom" constant="1" id="e3s-9a-Bfy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S4G-LB-ho2" secondAttribute="bottom" constant="575" id="hdr-lM-L65"/>
+                <constraint firstItem="S4G-LB-ho2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="n7V-4E-x3e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S4G-LB-ho2" secondAttribute="trailing" constant="198.5" id="oPo-dR-mC6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="133.92857142857142"/>

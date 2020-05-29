@@ -9,13 +9,14 @@
 import Alamofire
 import AlamofireObjectMapper
 
+@available(iOS 13.0, *)
 class MainDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+//    let token:String = UserDefaults.standard.value(forKey: "token") as! String
     func getTutorials(_ mainViewController: MainViewController) {        
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/items", method: .get,headers: ["x-access-token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yNyAyMjozMzozMyIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.nScOXTymTmJVpuCtNL-c_JBatNDMXFXV_wviZ1_Evwo"])
+            .request("\(self.appDelegate.baseUrl)/items", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<itemResponse>) in
                 switch response.result {

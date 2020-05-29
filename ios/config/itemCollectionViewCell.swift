@@ -12,13 +12,25 @@ class itemCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     @IBOutlet weak var free_ship: UILabel!
+ 
     @IBAction func heart(_ sender: Any) {
+
+        if self.heart.isSelected == true {
+            self.heart.isSelected = false
+            self.heart.tintColor = UIColor.white
+        }else {
+            self.heart.isSelected = true
+            self.heart.tintColor = ColorPalette.zigzagPink
+        }
+        
     }
+    @IBOutlet weak var heart: UIButton!
     @IBOutlet weak var mall_name: UILabel!
     @IBOutlet weak var item_name: UILabel!
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var item_image: UIImageView!
     
 }

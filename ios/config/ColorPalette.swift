@@ -22,5 +22,5 @@ struct ColorPalette {
     static let borderDark: UInt = 0xcfcfcf
     // rgb 237 237 237
     static let borderSoft: UInt = 0xededed
-    
+    static let zigzagPink:UIColor = UIColor(displayP3Red: 247/255, green: 37/255, blue: 133/255, alpha: 1)
 }

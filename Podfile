@@ -4,7 +4,7 @@
 target 'ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for ios
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityIndicator', '~> 2.3'
@@ -15,5 +15,6 @@ target 'ios' do
   pod 'Fabric', '~> 1.7.5'
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
-
+  pod 'BEMCheckBox'
+  pod 'RYFloatingInput'
 end
