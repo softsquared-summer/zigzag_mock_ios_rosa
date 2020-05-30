@@ -50,28 +50,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZq-w7-rXC">
-                        <rect key="frame" x="144" y="113" width="20.5" height="22"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="heart" catalog="system"/>
-                        <state key="selected">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                        <connections>
-                            <action selector="heart:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yGE-Yf-j69"/>
-                        </connections>
-                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="PZq-w7-rXC" secondAttribute="bottom" constant="165" id="7uU-gI-oFd"/>
                 <constraint firstItem="4lZ-f0-pPd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="AWZ-IO-Dwl"/>
                 <constraint firstItem="Sz7-vw-35M" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="X0f-mK-QGw" secondAttribute="trailing" constant="123" id="Dzg-qi-dhr"/>
-                <constraint firstItem="PZq-w7-rXC" firstAttribute="leading" secondItem="X0f-mK-QGw" secondAttribute="trailing" constant="82" id="I4m-Hq-Qa4"/>
                 <constraint firstItem="nlt-vH-26H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="JFJ-Sp-BZ8"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nlt-vH-26H" secondAttribute="trailing" constant="123" id="NEB-TR-PXU"/>
                 <constraint firstItem="X0f-mK-QGw" firstAttribute="leading" secondItem="Sz7-vw-35M" secondAttribute="leading" constant="20" id="NOY-Fz-tJv"/>
-                <constraint firstItem="PZq-w7-rXC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="113" id="WVZ-3W-54a"/>
                 <constraint firstItem="nlt-vH-26H" firstAttribute="top" secondItem="7ua-OD-0bw" secondAttribute="bottom" constant="1" id="ZSb-4U-GGe"/>
                 <constraint firstItem="Sz7-vw-35M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bVZ-8j-saj"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4lZ-f0-pPd" secondAttribute="bottom" constant="60" id="cTo-zF-R1J"/>
@@ -79,7 +65,6 @@
                 <constraint firstItem="X0f-mK-QGw" firstAttribute="top" secondItem="Sz7-vw-35M" secondAttribute="top" constant="115" id="gdI-T4-KiN"/>
                 <constraint firstItem="7ua-OD-0bw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="hyg-Ms-eta"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="4lZ-f0-pPd" secondAttribute="trailing" constant="123" id="k69-NC-dpx"/>
-                <constraint firstAttribute="trailing" secondItem="PZq-w7-rXC" secondAttribute="trailing" constant="20.5" id="qA8-QY-3jO"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7ua-OD-0bw" secondAttribute="trailing" constant="129" id="tlv-hr-wH1"/>
                 <constraint firstItem="Sz7-vw-35M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ttz-R6-eMM"/>
                 <constraint firstAttribute="trailing" secondItem="Sz7-vw-35M" secondAttribute="trailing" id="w3O-kt-Nhm"/>
@@ -89,7 +74,6 @@
             <size key="customSize" width="668" height="351"/>
             <connections>
                 <outlet property="free_ship" destination="X0f-mK-QGw" id="MS0-Ur-yyt"/>
-                <outlet property="heart" destination="PZq-w7-rXC" id="9hC-4N-r1U"/>
                 <outlet property="item_image" destination="Sz7-vw-35M" id="4UF-9e-CRA"/>
                 <outlet property="item_name" destination="nlt-vH-26H" id="ipU-7J-8rc"/>
                 <outlet property="mall_name" destination="7ua-OD-0bw" id="0FH-5Y-1wh"/>
@@ -98,7 +82,4 @@
             <point key="canvasLocation" x="168.84057971014494" y="-14.732142857142856"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="heart" catalog="system" width="128" height="109"/>
-    </resources>
 </document>

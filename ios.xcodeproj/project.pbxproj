@@ -28,6 +28,9 @@
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
+		FF889CB0248292A400CD72A6 /* detailHeartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */; };
+		FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CB12482934700CD72A6 /* detailHeartDataManager.swift */; };
+		FF889CB424829EFD00CD72A6 /* mainHeartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CB324829EFD00CD72A6 /* mainHeartDataManager.swift */; };
 		FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AE8542480C1EA003BC692 /* registerRespnse.swift */; };
 		FF8AE8572480C1FD003BC692 /* registerDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AE8562480C1FD003BC692 /* registerDataManager.swift */; };
 		FF8AE85C2480F510003BC692 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AE85A2480F510003BC692 /* detailViewController.swift */; };
@@ -71,6 +74,9 @@
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEF323D22F9B7CB00FEF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFC1B75E2DF73CFA0D0DAA7 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailHeartResponse.swift; sourceTree = "<group>"; };
+		FF889CB12482934700CD72A6 /* detailHeartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailHeartDataManager.swift; sourceTree = "<group>"; };
+		FF889CB324829EFD00CD72A6 /* mainHeartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainHeartDataManager.swift; sourceTree = "<group>"; };
 		FF8AE8542480C1EA003BC692 /* registerRespnse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerRespnse.swift; sourceTree = "<group>"; };
 		FF8AE8562480C1FD003BC692 /* registerDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerDataManager.swift; sourceTree = "<group>"; };
 		FF8AE85A2480F510003BC692 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BD75ABDD2301BCE600E0FC7A /* MainDataManager.swift */,
+				FF889CB324829EFD00CD72A6 /* mainHeartDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -266,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8AE8602480FD5E003BC692 /* detailDataManager.swift */,
+				FF889CB12482934700CD72A6 /* detailHeartDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -274,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				FF8AE8622480FD89003BC692 /* detailResponse.swift */,
+				FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 				BDEF322822F9B7CB00FEF8BD /* Frameworks */,
 				BDEF322922F9B7CB00FEF8BD /* Resources */,
 				76034F453FFDF256884BB6C4 /* [CP] Embed Pods Frameworks */,
+				BCF44BB9E21B742B38087103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,6 +438,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BCF44BB9E21B742B38087103 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -438,6 +465,7 @@
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */,
 				FF8AE8632480FD89003BC692 /* detailResponse.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
@@ -445,6 +473,8 @@
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				FF8D7C8824800F4E00A3E7C4 /* loginDataManager.swift in Sources */,
+				FF889CB0248292A400CD72A6 /* detailHeartResponse.swift in Sources */,
+				FF889CB424829EFD00CD72A6 /* mainHeartDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,

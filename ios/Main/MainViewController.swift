@@ -22,7 +22,7 @@ class MainViewController:  UIViewController, UICollectionViewDataSource  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        MainDataManager().getTutorials(self)
+        
         print(Items)
         
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -58,8 +58,12 @@ class MainViewController:  UIViewController, UICollectionViewDataSource  {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        MainDataManager().getTutorials(self)
         self.tabBarController?.navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+
+    @objc func heartAction(){
+        print("action")
     }
     
 }
@@ -93,13 +97,20 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
             cell.free_ship.text = ""
             cell.free_ship.isHidden = false
         }
+        print(Items[indexPath.item].item_id)
+        print(Items[indexPath.item].is_heart)
+        print("=============================")
         if Items[indexPath.item].is_heart == "Y" {
-            cell.heart.isSelected = true
+            cell.isHeart = true
+            cell.bt1.isSelected = true
         }else {
-            cell.heart.isSelected = false
+            cell.isHeart = false
+            cell.bt1.isSelected = false
         }
         cell.free_ship.layer.zPosition = 1
         cell.price.text = Items[indexPath.item].price
+        cell.item_id = Items[indexPath.item].item_id
+        cell.superController = self
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

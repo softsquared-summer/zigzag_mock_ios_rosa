@@ -17,4 +17,6 @@ target 'ios' do
   pod 'KYDrawerController'
   pod 'BEMCheckBox'
   pod 'RYFloatingInput'
+  pod 'DOFavoriteButton'
+  pod 'WCLShineButton'
 end

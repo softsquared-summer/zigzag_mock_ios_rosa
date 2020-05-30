@@ -7,24 +7,42 @@
 //
 
 import UIKit
+import WCLShineButton
 
 @available(iOS 13.0, *)
 class detailViewController: UIViewController {
     
+    @IBOutlet weak var mall_name2: UILabel!
+    @IBOutlet weak var mall_name: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var item_name: UILabel!
+    @IBOutlet weak var comment: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var buyBtn: UIButton!
+    @IBOutlet weak var itemView: UIView!
     var item_id:Int! = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(item_id)
-    }
-    var mall_name:String? = ""
-    var item_name:String? = ""
-    var comment_num:Int? = 0
-    var is_heart:Bool? = false
-    var discount:String? = ""
-    var price:String? = ""
-    override func viewWillAppear(_ animated: Bool) {
-        
         detailDataManager().getDetail(self,item_id : item_id)
+        buyBtn.layer.cornerRadius = 28
         
+        var param1 = WCLShineParams()
+        param1.bigShineColor = ColorPalette.zigzagPink
+        param1.smallShineColor = UIColor(rgb: (170,170,170))
+        param1.animDuration = 1
+//        heart.params = param1
+//        heart.isSelected = false
+        var bt1 = WCLShineButton(frame: .init(x: 330, y: 640, width: 50, height: 50), params: param1)
+        bt1.fillColor = ColorPalette.zigzagPink
+        bt1.color = UIColor(rgb: (170,170,170))
+        bt1.addTarget(self, action: #selector(action), for: .valueChanged)
+        self.view.addSubview(bt1)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        image.image = UIImage(named: "스커트")
+    }
+    @objc func action(){
+        detailHeartDataManager().set_heart(self, item_id: item_id)
     }
 }

@@ -16,7 +16,7 @@ class MainDataManager {
     func getTutorials(_ mainViewController: MainViewController) {        
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/items", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
+            .request("\(self.appDelegate.baseUrl)/items", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0zMCAyMzo0NDo0MSIsImlkIjoidGVzdCIsInB3IjoiMTIzNCJ9.wqikNdprILNQEYky5-NvoWsO9b-pswfs8555uv-3KHI"])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<itemResponse>) in
                 switch response.result {

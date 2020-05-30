@@ -14,17 +14,22 @@ class detailDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func getDetail(_ detailViewController: detailViewController , item_id:Int){
-        var token:String = UserDefaults.standard.value(forKey: "token") as! String
-        
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/items/\(item_id)", method:.get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yNyAyMjozMzozMyIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.nScOXTymTmJVpuCtNL-c_JBatNDMXFXV_wviZ1_Evwo"])
+            .request("\(self.appDelegate.baseUrl)/items/\(item_id)", method:.get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<detailResponse>) in
                 switch response.result {
                 case .success(let detailResponse):
                     if detailResponse.code == 100 {
-                        print(detailResponse.result)
+                        let item:detailItems = detailResponse.result
+                        print(item.commnet_num)
+                        detailViewController.navigationController?.navigationBar.topItem?.title = item.mall_name
+                        detailViewController.mall_name.text = item.mall_name
+                        detailViewController.mall_name2.text = item.mall_name
+                        detailViewController.item_name.text = item.item_name
+                        detailViewController.comment.text = "(\(item.commnet_num!))"
+                        detailViewController.price.text = item.price
                     } else if detailResponse.code == 201{
                         
                     }
@@ -35,4 +40,5 @@ class detailDataManager {
             })
         
     }
+   
 }
