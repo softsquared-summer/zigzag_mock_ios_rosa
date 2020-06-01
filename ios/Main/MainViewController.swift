@@ -97,9 +97,6 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
             cell.free_ship.text = ""
             cell.free_ship.isHidden = false
         }
-        print(Items[indexPath.item].item_id)
-        print(Items[indexPath.item].is_heart)
-        print("=============================")
         if Items[indexPath.item].is_heart == "Y" {
             cell.isHeart = true
             cell.bt1.isSelected = true

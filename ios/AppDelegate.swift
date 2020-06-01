@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Use Firebase library to configure APIs
         //FirebaseApp.configure()
+
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let tabbar = tabBarConntroller()

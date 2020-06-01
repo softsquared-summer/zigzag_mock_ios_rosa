@@ -37,6 +37,9 @@
 		FF8AE85D2480F510003BC692 /* detailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8AE85B2480F510003BC692 /* detailViewController.xib */; };
 		FF8AE8612480FD5E003BC692 /* detailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AE8602480FD5E003BC692 /* detailDataManager.swift */; };
 		FF8AE8632480FD89003BC692 /* detailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AE8622480FD89003BC692 /* detailResponse.swift */; };
+		FF8B7DB92483F88C00DE1B5B /* selectPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */; };
+		FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B7DBA2483F8A100DE1B5B /* selectPopUpDelegate.swift */; };
+		FF8B7DBD2483F8B200DE1B5B /* selectPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8B7DBC2483F8B200DE1B5B /* selectPopUp.storyboard */; };
 		FF8D7C7C247F85FB00A3E7C4 /* itemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C7A247F85FB00A3E7C4 /* itemCollectionViewCell.swift */; };
 		FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8D7C7B247F85FB00A3E7C4 /* itemCollectionViewCell.xib */; };
 		FF8D7C81247FE64C00A3E7C4 /* tabBarConntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C7F247FE64C00A3E7C4 /* tabBarConntroller.swift */; };
@@ -46,6 +49,18 @@
 		FF8D7C8A2480123200A3E7C4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C892480123200A3E7C4 /* UserResponse.swift */; };
 		FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C8C24802CC300A3E7C4 /* registerViewController.swift */; };
 		FF8D7C8F24802CC300A3E7C4 /* registerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8D7C8D24802CC300A3E7C4 /* registerViewController.xib */; };
+		FF9144542484A30500C5B746 /* selectColorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144532484A30500C5B746 /* selectColorPopUp.swift */; };
+		FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9144572484A5BA00C5B746 /* selectColorPopUp.storyboard */; };
+		FF91445A2484A79500C5B746 /* selectColorPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144592484A79500C5B746 /* selectColorPopUpDelegate.swift */; };
+		FF91445C2484A8C000C5B746 /* selectSizePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91445B2484A8C000C5B746 /* selectSizePopUp.swift */; };
+		FF9144602484A8D500C5B746 /* selectSizePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF91445F2484A8D500C5B746 /* selectSizePopUp.storyboard */; };
+		FF9144622484A97900C5B746 /* selectSizePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144612484A97900C5B746 /* selectSizePopUpDelegate.swift */; };
+		FF9144652484AFC600C5B746 /* selectColotDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144642484AFC600C5B746 /* selectColotDataManager.swift */; };
+		FF9144682484AFEB00C5B746 /* selectColorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144672484AFEB00C5B746 /* selectColorResponse.swift */; };
+		FF91446B2484B65300C5B746 /* selectSizeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91446A2484B65300C5B746 /* selectSizeDataManager.swift */; };
+		FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144702484C69200C5B746 /* basketDataManager.swift */; };
+		FF9144742484C6D400C5B746 /* basketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144732484C6D400C5B746 /* basketResponse.swift */; };
+		FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144782484D56E00C5B746 /* GMStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +98,9 @@
 		FF8AE85B2480F510003BC692 /* detailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailViewController.xib; sourceTree = "<group>"; };
 		FF8AE8602480FD5E003BC692 /* detailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailDataManager.swift; sourceTree = "<group>"; };
 		FF8AE8622480FD89003BC692 /* detailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailResponse.swift; sourceTree = "<group>"; };
+		FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectPopUp.swift; sourceTree = "<group>"; };
+		FF8B7DBA2483F8A100DE1B5B /* selectPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectPopUpDelegate.swift; sourceTree = "<group>"; };
+		FF8B7DBC2483F8B200DE1B5B /* selectPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectPopUp.storyboard; sourceTree = "<group>"; };
 		FF8D7C7A247F85FB00A3E7C4 /* itemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = itemCollectionViewCell.swift; path = ios/config/itemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FF8D7C7B247F85FB00A3E7C4 /* itemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = itemCollectionViewCell.xib; path = ios/config/itemCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		FF8D7C7F247FE64C00A3E7C4 /* tabBarConntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarConntroller.swift; sourceTree = "<group>"; };
@@ -92,6 +110,18 @@
 		FF8D7C892480123200A3E7C4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		FF8D7C8C24802CC300A3E7C4 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		FF8D7C8D24802CC300A3E7C4 /* registerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = registerViewController.xib; sourceTree = "<group>"; };
+		FF9144532484A30500C5B746 /* selectColorPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColorPopUp.swift; sourceTree = "<group>"; };
+		FF9144572484A5BA00C5B746 /* selectColorPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectColorPopUp.storyboard; sourceTree = "<group>"; };
+		FF9144592484A79500C5B746 /* selectColorPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColorPopUpDelegate.swift; sourceTree = "<group>"; };
+		FF91445B2484A8C000C5B746 /* selectSizePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSizePopUp.swift; sourceTree = "<group>"; };
+		FF91445F2484A8D500C5B746 /* selectSizePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectSizePopUp.storyboard; sourceTree = "<group>"; };
+		FF9144612484A97900C5B746 /* selectSizePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSizePopUpDelegate.swift; sourceTree = "<group>"; };
+		FF9144642484AFC600C5B746 /* selectColotDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColotDataManager.swift; sourceTree = "<group>"; };
+		FF9144672484AFEB00C5B746 /* selectColorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColorResponse.swift; sourceTree = "<group>"; };
+		FF91446A2484B65300C5B746 /* selectSizeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSizeDataManager.swift; sourceTree = "<group>"; };
+		FF9144702484C69200C5B746 /* basketDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketDataManager.swift; sourceTree = "<group>"; };
+		FF9144732484C6D400C5B746 /* basketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketResponse.swift; sourceTree = "<group>"; };
+		FF9144782484D56E00C5B746 /* GMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = ../../Pods/GMStepper/GMStepper/GMStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +249,7 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				FF889CB52482B4BC00CD72A6 /* select */,
 				FF8AE8592480F4FC003BC692 /* detail */,
 				FF8AE8582480DC08003BC692 /* search */,
 				FF8D7C8B24802CB300A3E7C4 /* register */,
@@ -233,6 +264,21 @@
 				BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		FF889CB52482B4BC00CD72A6 /* select */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144722484C6C700C5B746 /* Entity */,
+				FF91446D2484C61800C5B746 /* DataManager */,
+				FF9144522484A10300C5B746 /* slelectSize */,
+				FF9144512484A0FA00C5B746 /* selectColor */,
+				FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */,
+				FF8B7DBA2483F8A100DE1B5B /* selectPopUpDelegate.swift */,
+				FF8B7DBC2483F8B200DE1B5B /* selectPopUp.storyboard */,
+				FF9144782484D56E00C5B746 /* GMStepper.swift */,
+			);
+			path = select;
 			sourceTree = "<group>";
 		};
 		FF8AE8522480C1BD003BC692 /* Entity */ = {
@@ -323,6 +369,69 @@
 			path = register;
 			sourceTree = "<group>";
 		};
+		FF9144512484A0FA00C5B746 /* selectColor */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144662484AFCB00C5B746 /* Entity */,
+				FF9144632484AE5100C5B746 /* DataManager */,
+				FF9144532484A30500C5B746 /* selectColorPopUp.swift */,
+				FF9144572484A5BA00C5B746 /* selectColorPopUp.storyboard */,
+				FF9144592484A79500C5B746 /* selectColorPopUpDelegate.swift */,
+			);
+			path = selectColor;
+			sourceTree = "<group>";
+		};
+		FF9144522484A10300C5B746 /* slelectSize */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144692484B63400C5B746 /* DataManager */,
+				FF91445B2484A8C000C5B746 /* selectSizePopUp.swift */,
+				FF91445F2484A8D500C5B746 /* selectSizePopUp.storyboard */,
+				FF9144612484A97900C5B746 /* selectSizePopUpDelegate.swift */,
+			);
+			path = slelectSize;
+			sourceTree = "<group>";
+		};
+		FF9144632484AE5100C5B746 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144642484AFC600C5B746 /* selectColotDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FF9144662484AFCB00C5B746 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144672484AFEB00C5B746 /* selectColorResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF9144692484B63400C5B746 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF91446A2484B65300C5B746 /* selectSizeDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FF91446D2484C61800C5B746 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144702484C69200C5B746 /* basketDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FF9144722484C6C700C5B746 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF9144732484C6D400C5B746 /* basketResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,13 +444,14 @@
 				BDEF322822F9B7CB00FEF8BD /* Frameworks */,
 				BDEF322922F9B7CB00FEF8BD /* Resources */,
 				76034F453FFDF256884BB6C4 /* [CP] Embed Pods Frameworks */,
-				BCF44BB9E21B742B38087103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ios;
+			packageProductDependencies = (
+			);
 			productName = ios;
 			productReference = BDEF322B22F9B7CB00FEF8BD /* ios.app */;
 			productType = "com.apple.product-type.application";
@@ -370,6 +480,8 @@
 				Base,
 			);
 			mainGroup = BDEF322222F9B7CA00FEF8BD;
+			packageReferences = (
+			);
 			productRefGroup = BDEF322C22F9B7CB00FEF8BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,11 +496,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9144602484A8D500C5B746 /* selectSizePopUp.storyboard in Resources */,
 				FF8AE85D2480F510003BC692 /* detailViewController.xib in Resources */,
 				FF8D7C82247FE64C00A3E7C4 /* tabBarConntroller.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				FF8B7DBD2483F8B200DE1B5B /* selectPopUp.storyboard in Resources */,
 				FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
+				FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */,
 				BD9BF18422F9D1A4009E47EB /* loginViewController.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
@@ -438,23 +553,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCF44BB9E21B742B38087103 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -466,25 +564,37 @@
 				FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */,
+				FF9144542484A30500C5B746 /* selectColorPopUp.swift in Sources */,
 				FF8AE8632480FD89003BC692 /* detailResponse.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				FF91445A2484A79500C5B746 /* selectColorPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				FF8D7C8824800F4E00A3E7C4 /* loginDataManager.swift in Sources */,
+				FF9144652484AFC600C5B746 /* selectColotDataManager.swift in Sources */,
 				FF889CB0248292A400CD72A6 /* detailHeartResponse.swift in Sources */,
 				FF889CB424829EFD00CD72A6 /* mainHeartDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
+				FF8B7DB92483F88C00DE1B5B /* selectPopUp.swift in Sources */,
 				FF8D7C8A2480123200A3E7C4 /* UserResponse.swift in Sources */,
 				FF8D7C81247FE64C00A3E7C4 /* tabBarConntroller.swift in Sources */,
 				FF8AE8572480C1FD003BC692 /* registerDataManager.swift in Sources */,
 				FF8D7C7C247F85FB00A3E7C4 /* itemCollectionViewCell.swift in Sources */,
 				FF8AE8612480FD5E003BC692 /* detailDataManager.swift in Sources */,
 				FF8D7C8424800A2400A3E7C4 /* floaTextField.swift in Sources */,
+				FF91446B2484B65300C5B746 /* selectSizeDataManager.swift in Sources */,
+				FF91445C2484A8C000C5B746 /* selectSizePopUp.swift in Sources */,
+				FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */,
+				FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */,
+				FF9144622484A97900C5B746 /* selectSizePopUpDelegate.swift in Sources */,
+				FF9144742484C6D400C5B746 /* basketResponse.swift in Sources */,
+				FF9144682484AFEB00C5B746 /* selectColorResponse.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
@@ -559,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -614,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
