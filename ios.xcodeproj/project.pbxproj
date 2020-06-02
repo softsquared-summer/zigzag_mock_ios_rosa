@@ -61,6 +61,21 @@
 		FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144702484C69200C5B746 /* basketDataManager.swift */; };
 		FF9144742484C6D400C5B746 /* basketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144732484C6D400C5B746 /* basketResponse.swift */; };
 		FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144782484D56E00C5B746 /* GMStepper.swift */; };
+		FF91447D2484F39F00C5B746 /* mallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91447B2484F39F00C5B746 /* mallViewController.swift */; };
+		FF91447E2484F39F00C5B746 /* mallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91447C2484F39F00C5B746 /* mallViewController.xib */; };
+		FF91448F248561DB00C5B746 /* rankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91448D248561DB00C5B746 /* rankViewController.swift */; };
+		FF914490248561DB00C5B746 /* rankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91448E248561DB00C5B746 /* rankViewController.xib */; };
+		FF914493248561F000C5B746 /* bookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF914491248561F000C5B746 /* bookmarkViewController.swift */; };
+		FF914494248561F000C5B746 /* bookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF914492248561F000C5B746 /* bookmarkViewController.xib */; };
+		FF9144972485739800C5B746 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144952485739800C5B746 /* TableViewCell.swift */; };
+		FF9144982485739800C5B746 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9144962485739800C5B746 /* TableViewCell.xib */; };
+		FF91449C2485755300C5B746 /* rankDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91449B2485755300C5B746 /* rankDataManager.swift */; };
+		FF91449E2485756000C5B746 /* rankResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91449D2485756000C5B746 /* rankResponse.swift */; };
+		FF9144A224858F9F00C5B746 /* detailMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144A024858F9F00C5B746 /* detailMallViewController.swift */; };
+		FF9144A324858F9F00C5B746 /* detailMallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9144A124858F9F00C5B746 /* detailMallViewController.xib */; };
+		FFDBBF412485DC4B00844D44 /* mallDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */; };
+		FFDBBF442485DC9800844D44 /* mallDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */; };
+		FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +137,21 @@
 		FF9144702484C69200C5B746 /* basketDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketDataManager.swift; sourceTree = "<group>"; };
 		FF9144732484C6D400C5B746 /* basketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketResponse.swift; sourceTree = "<group>"; };
 		FF9144782484D56E00C5B746 /* GMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = ../../Pods/GMStepper/GMStepper/GMStepper.swift; sourceTree = "<group>"; };
+		FF91447B2484F39F00C5B746 /* mallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallViewController.swift; sourceTree = "<group>"; };
+		FF91447C2484F39F00C5B746 /* mallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mallViewController.xib; sourceTree = "<group>"; };
+		FF91448D248561DB00C5B746 /* rankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankViewController.swift; sourceTree = "<group>"; };
+		FF91448E248561DB00C5B746 /* rankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = rankViewController.xib; sourceTree = "<group>"; };
+		FF914491248561F000C5B746 /* bookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookmarkViewController.swift; sourceTree = "<group>"; };
+		FF914492248561F000C5B746 /* bookmarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bookmarkViewController.xib; sourceTree = "<group>"; };
+		FF9144952485739800C5B746 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FF9144962485739800C5B746 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FF91449B2485755300C5B746 /* rankDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankDataManager.swift; sourceTree = "<group>"; };
+		FF91449D2485756000C5B746 /* rankResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankResponse.swift; sourceTree = "<group>"; };
+		FF9144A024858F9F00C5B746 /* detailMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailMallViewController.swift; sourceTree = "<group>"; };
+		FF9144A124858F9F00C5B746 /* detailMallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailMallViewController.xib; sourceTree = "<group>"; };
+		FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailResponse.swift; sourceTree = "<group>"; };
+		FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailDataManager.swift; sourceTree = "<group>"; };
+		FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallItemDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,11 +279,12 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				FF91447A2484F2F400C5B746 /* mall */,
+				BD9BF17122F9C31D009E47EB /* config */,
 				FF889CB52482B4BC00CD72A6 /* select */,
 				FF8AE8592480F4FC003BC692 /* detail */,
 				FF8AE8582480DC08003BC692 /* search */,
 				FF8D7C8B24802CB300A3E7C4 /* register */,
-				BD9BF17122F9C31D009E47EB /* config */,
 				BD9BF17022F9C318009E47EB /* login */,
 				FF8D7C7E247FE5FF00A3E7C4 /* TabBar */,
 				BD9BF16F22F9C314009E47EB /* Main */,
@@ -432,6 +463,84 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		FF91447A2484F2F400C5B746 /* mall */ = {
+			isa = PBXGroup;
+			children = (
+				FF91449F24858F4A00C5B746 /* mallDetail */,
+				FF91448024850E0B00C5B746 /* bookmark */,
+				FF91447F24850E0500C5B746 /* rank */,
+				FF91447B2484F39F00C5B746 /* mallViewController.swift */,
+				FF91447C2484F39F00C5B746 /* mallViewController.xib */,
+			);
+			path = mall;
+			sourceTree = "<group>";
+		};
+		FF91447F24850E0500C5B746 /* rank */ = {
+			isa = PBXGroup;
+			children = (
+				FF91449A2485754000C5B746 /* Entity */,
+				FF9144992485753A00C5B746 /* DataManager */,
+				FF91448D248561DB00C5B746 /* rankViewController.swift */,
+				FF91448E248561DB00C5B746 /* rankViewController.xib */,
+				FF9144952485739800C5B746 /* TableViewCell.swift */,
+				FF9144962485739800C5B746 /* TableViewCell.xib */,
+			);
+			path = rank;
+			sourceTree = "<group>";
+		};
+		FF91448024850E0B00C5B746 /* bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				FF914491248561F000C5B746 /* bookmarkViewController.swift */,
+				FF914492248561F000C5B746 /* bookmarkViewController.xib */,
+			);
+			path = bookmark;
+			sourceTree = "<group>";
+		};
+		FF9144992485753A00C5B746 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF91449B2485755300C5B746 /* rankDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FF91449A2485754000C5B746 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF91449D2485756000C5B746 /* rankResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF91449F24858F4A00C5B746 /* mallDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBBF422485DC5000844D44 /* DataManager */,
+				FFDBBF3F2485DC1E00844D44 /* Entity */,
+				FF9144A024858F9F00C5B746 /* detailMallViewController.swift */,
+				FF9144A124858F9F00C5B746 /* detailMallViewController.xib */,
+			);
+			path = mallDetail;
+			sourceTree = "<group>";
+		};
+		FFDBBF3F2485DC1E00844D44 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FFDBBF422485DC5000844D44 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */,
+				FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -501,10 +610,15 @@
 				FF8D7C82247FE64C00A3E7C4 /* tabBarConntroller.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				FF8B7DBD2483F8B200DE1B5B /* selectPopUp.storyboard in Resources */,
+				FF9144A324858F9F00C5B746 /* detailMallViewController.xib in Resources */,
+				FF9144982485739800C5B746 /* TableViewCell.xib in Resources */,
 				FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */,
 				BD9BF18422F9D1A4009E47EB /* loginViewController.xib in Resources */,
+				FF914494248561F000C5B746 /* bookmarkViewController.xib in Resources */,
+				FF91447E2484F39F00C5B746 /* mallViewController.xib in Resources */,
+				FF914490248561DB00C5B746 /* rankViewController.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				FF8D7C8F24802CC300A3E7C4 /* registerViewController.xib in Resources */,
@@ -561,7 +675,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
+				FF9144A224858F9F00C5B746 /* detailMallViewController.swift in Sources */,
 				FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */,
+				FF91448F248561DB00C5B746 /* rankViewController.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */,
 				FF9144542484A30500C5B746 /* selectColorPopUp.swift in Sources */,
@@ -569,11 +685,15 @@
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
+				FF91449E2485756000C5B746 /* rankResponse.swift in Sources */,
+				FFDBBF442485DC9800844D44 /* mallDetailDataManager.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				FF91445A2484A79500C5B746 /* selectColorPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
+				FF91449C2485755300C5B746 /* rankDataManager.swift in Sources */,
 				FF8D7C8824800F4E00A3E7C4 /* loginDataManager.swift in Sources */,
 				FF9144652484AFC600C5B746 /* selectColotDataManager.swift in Sources */,
+				FFDBBF412485DC4B00844D44 /* mallDetailResponse.swift in Sources */,
 				FF889CB0248292A400CD72A6 /* detailHeartResponse.swift in Sources */,
 				FF889CB424829EFD00CD72A6 /* mainHeartDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
@@ -588,12 +708,16 @@
 				FF8D7C8424800A2400A3E7C4 /* floaTextField.swift in Sources */,
 				FF91446B2484B65300C5B746 /* selectSizeDataManager.swift in Sources */,
 				FF91445C2484A8C000C5B746 /* selectSizePopUp.swift in Sources */,
+				FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */,
 				FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */,
+				FF9144972485739800C5B746 /* TableViewCell.swift in Sources */,
 				FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				FF914493248561F000C5B746 /* bookmarkViewController.swift in Sources */,
 				FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */,
 				FF9144622484A97900C5B746 /* selectSizePopUpDelegate.swift in Sources */,
 				FF9144742484C6D400C5B746 /* basketResponse.swift in Sources */,
+				FF91447D2484F39F00C5B746 /* mallViewController.swift in Sources */,
 				FF9144682484AFEB00C5B746 /* selectColorResponse.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */,

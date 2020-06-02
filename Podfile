@@ -18,6 +18,8 @@ target 'ios' do
   pod 'RYFloatingInput'
   pod 'WCLShineButton'
  pod 'GMStepper'
+pod 'Tabman', '~> 2.9'
+ 
  
  # Workaround for Cocoapods issue #7606
  post_install do |installer|

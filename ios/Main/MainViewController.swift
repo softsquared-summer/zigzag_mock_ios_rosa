@@ -72,22 +72,10 @@ class MainViewController:  UIViewController, UICollectionViewDataSource  {
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = itemCollection.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! itemCollectionViewCell
-        let url1 = URL(string: Items[indexPath.item].item_image.url1)
-        do{
-            let data1 = try Data(contentsOf: url1!)
-            let imageView = UIImageView()
-            imageView.contentMode = .scaleAspectFit
-            imageView.image = UIImage(data: data1)
-            imageView.frame = CGRect(x: cell.frame.width, y: 0,
-                                     width: cell.frame.width,
-                                     height: 300)
-            
-            //            cell.item_image.image = UIImage(data: data1)
-            cell.addSubview(imageView)
-        }catch let err{
-            print("urlError")
-        }
+
+ 
         cell.item_image.image = UIImage(named: "스커트")
+        
         cell.item_name.text = Items[indexPath.item].item_name
         cell.mall_name.text = Items[indexPath.item].mall_name
         cell.mall_name.layer.zPosition = 1
@@ -108,6 +96,8 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         cell.price.text = Items[indexPath.item].price
         cell.item_id = Items[indexPath.item].item_id
         cell.superController = self
+        cell.discount.text = Items[indexPath.item].discount
+        
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

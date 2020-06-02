@@ -39,6 +39,7 @@ class detailViewController: UIViewController, selectPopUpDelegate {
         var bt1 = WCLShineButton(frame: .init(x: 330, y: 640, width: 50, height: 50), params: param1)
         bt1.fillColor = ColorPalette.zigzagPink
         bt1.color = UIColor(rgb: (170,170,170))
+        bt1.color = UIColor.systemGray5
         bt1.addTarget(self, action: #selector(action), for: .valueChanged)
         self.view.addSubview(bt1)
     }
