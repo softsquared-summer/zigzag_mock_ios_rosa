@@ -37,7 +37,12 @@ extension rankViewController: UITableViewDelegate, UITableViewDataSource {
         cell.mall_name.text = malls[indexPath.row].mall_name
         let rank:String = String(malls[indexPath.row].mall_rank)
         cell.rank.text = rank
-        cell.mall_tag.text = malls[indexPath.row].tags.tag_name
+        if malls[indexPath.row].tags.tag_name != "없음"{
+            cell.mall_tag.text = malls[indexPath.row].tags.tag_name
+            cell.mall_tag.textColor = .brown
+        }else{
+            cell.mall_tag.isHidden = true
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

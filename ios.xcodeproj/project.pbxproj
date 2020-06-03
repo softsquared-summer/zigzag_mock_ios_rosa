@@ -28,6 +28,17 @@
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
+		FF88822F248627D700434F6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88822E248627D700434F6E /* ViewController.swift */; };
+		FF88823224862A3E00434F6E /* barButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88823124862A3E00434F6E /* barButtons.swift */; };
+		FF8882362486317700434F6E /* collectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8882342486317700434F6E /* collectViewController.swift */; };
+		FF8882372486317700434F6E /* collectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8882352486317700434F6E /* collectViewController.xib */; };
+		FF88823A24863AB100434F6E /* adTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88823824863AB100434F6E /* adTableViewCell.swift */; };
+		FF88823B24863AB100434F6E /* adTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF88823924863AB100434F6E /* adTableViewCell.xib */; };
+		FF88823D24863E3B00434F6E /* TabBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88823C24863E3B00434F6E /* TabBarButtons.swift */; };
+		FF8882462486447700434F6E /* categoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8882452486447700434F6E /* categoryResponse.swift */; };
+		FF8882482486448900434F6E /* categoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8882472486448900434F6E /* categoryDataManager.swift */; };
+		FF88824D248648C300434F6E /* categoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88824B248648C300434F6E /* categoryViewController.swift */; };
+		FF88824E248648C300434F6E /* categoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF88824C248648C300434F6E /* categoryViewController.xib */; };
 		FF889CB0248292A400CD72A6 /* detailHeartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */; };
 		FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CB12482934700CD72A6 /* detailHeartDataManager.swift */; };
 		FF889CB424829EFD00CD72A6 /* mainHeartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889CB324829EFD00CD72A6 /* mainHeartDataManager.swift */; };
@@ -40,6 +51,8 @@
 		FF8B7DB92483F88C00DE1B5B /* selectPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */; };
 		FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B7DBA2483F8A100DE1B5B /* selectPopUpDelegate.swift */; };
 		FF8B7DBD2483F8B200DE1B5B /* selectPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8B7DBC2483F8B200DE1B5B /* selectPopUp.storyboard */; };
+		FF8BBA102486771B009FF206 /* mainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BBA0E2486771B009FF206 /* mainTabViewController.swift */; };
+		FF8BBA112486771B009FF206 /* mainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8BBA0F2486771B009FF206 /* mainTabViewController.xib */; };
 		FF8D7C7C247F85FB00A3E7C4 /* itemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C7A247F85FB00A3E7C4 /* itemCollectionViewCell.swift */; };
 		FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8D7C7B247F85FB00A3E7C4 /* itemCollectionViewCell.xib */; };
 		FF8D7C81247FE64C00A3E7C4 /* tabBarConntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C7F247FE64C00A3E7C4 /* tabBarConntroller.swift */; };
@@ -73,6 +86,10 @@
 		FF91449E2485756000C5B746 /* rankResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91449D2485756000C5B746 /* rankResponse.swift */; };
 		FF9144A224858F9F00C5B746 /* detailMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144A024858F9F00C5B746 /* detailMallViewController.swift */; };
 		FF9144A324858F9F00C5B746 /* detailMallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9144A124858F9F00C5B746 /* detailMallViewController.xib */; };
+		FF91FFDD24878191002C2900 /* bestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91FFDB24878191002C2900 /* bestViewController.swift */; };
+		FF91FFDE24878191002C2900 /* bestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91FFDC24878191002C2900 /* bestViewController.xib */; };
+		FF91FFE424879D85002C2900 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91FFE224879D85002C2900 /* newViewController.swift */; };
+		FF91FFE524879D85002C2900 /* newViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91FFE324879D85002C2900 /* newViewController.xib */; };
 		FFDBBF412485DC4B00844D44 /* mallDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */; };
 		FFDBBF442485DC9800844D44 /* mallDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */; };
 		FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */; };
@@ -104,6 +121,17 @@
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEF323D22F9B7CB00FEF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFC1B75E2DF73CFA0D0DAA7 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF88822E248627D700434F6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF88823124862A3E00434F6E /* barButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barButtons.swift; sourceTree = "<group>"; };
+		FF8882342486317700434F6E /* collectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectViewController.swift; sourceTree = "<group>"; };
+		FF8882352486317700434F6E /* collectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = collectViewController.xib; sourceTree = "<group>"; };
+		FF88823824863AB100434F6E /* adTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adTableViewCell.swift; sourceTree = "<group>"; };
+		FF88823924863AB100434F6E /* adTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = adTableViewCell.xib; sourceTree = "<group>"; };
+		FF88823C24863E3B00434F6E /* TabBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtons.swift; sourceTree = "<group>"; };
+		FF8882452486447700434F6E /* categoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryResponse.swift; sourceTree = "<group>"; };
+		FF8882472486448900434F6E /* categoryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryDataManager.swift; sourceTree = "<group>"; };
+		FF88824B248648C300434F6E /* categoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryViewController.swift; sourceTree = "<group>"; };
+		FF88824C248648C300434F6E /* categoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryViewController.xib; sourceTree = "<group>"; };
 		FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailHeartResponse.swift; sourceTree = "<group>"; };
 		FF889CB12482934700CD72A6 /* detailHeartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailHeartDataManager.swift; sourceTree = "<group>"; };
 		FF889CB324829EFD00CD72A6 /* mainHeartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainHeartDataManager.swift; sourceTree = "<group>"; };
@@ -116,6 +144,8 @@
 		FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectPopUp.swift; sourceTree = "<group>"; };
 		FF8B7DBA2483F8A100DE1B5B /* selectPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectPopUpDelegate.swift; sourceTree = "<group>"; };
 		FF8B7DBC2483F8B200DE1B5B /* selectPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectPopUp.storyboard; sourceTree = "<group>"; };
+		FF8BBA0E2486771B009FF206 /* mainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabViewController.swift; sourceTree = "<group>"; };
+		FF8BBA0F2486771B009FF206 /* mainTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainTabViewController.xib; sourceTree = "<group>"; };
 		FF8D7C7A247F85FB00A3E7C4 /* itemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = itemCollectionViewCell.swift; path = ios/config/itemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FF8D7C7B247F85FB00A3E7C4 /* itemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = itemCollectionViewCell.xib; path = ios/config/itemCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		FF8D7C7F247FE64C00A3E7C4 /* tabBarConntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarConntroller.swift; sourceTree = "<group>"; };
@@ -149,6 +179,10 @@
 		FF91449D2485756000C5B746 /* rankResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankResponse.swift; sourceTree = "<group>"; };
 		FF9144A024858F9F00C5B746 /* detailMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailMallViewController.swift; sourceTree = "<group>"; };
 		FF9144A124858F9F00C5B746 /* detailMallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailMallViewController.xib; sourceTree = "<group>"; };
+		FF91FFDB24878191002C2900 /* bestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestViewController.swift; sourceTree = "<group>"; };
+		FF91FFDC24878191002C2900 /* bestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bestViewController.xib; sourceTree = "<group>"; };
+		FF91FFE224879D85002C2900 /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
+		FF91FFE324879D85002C2900 /* newViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newViewController.xib; sourceTree = "<group>"; };
 		FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailResponse.swift; sourceTree = "<group>"; };
 		FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailDataManager.swift; sourceTree = "<group>"; };
 		FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallItemDataManager.swift; sourceTree = "<group>"; };
@@ -213,11 +247,12 @@
 		BD9BF16F22F9C314009E47EB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BD75ABD62301B42900E0FC7A /* Entity */,
-				BD75ABD52301B40B00E0FC7A /* DataManager */,
-				BD75ABD42301B3FB00E0FC7A /* PopUp */,
-				BD9BF18522F9DCC7009E47EB /* MainViewController.swift */,
-				BD9BF18622F9DCC7009E47EB /* MainViewController.xib */,
+				FF8BBA0D248676FB009FF206 /* new */,
+				FF8BBA0C248676EF009FF206 /* best */,
+				FF8BBA0B248676C4009FF206 /* home */,
+				FF88823024862A2E00434F6E /* BarButtons */,
+				FF8BBA0E2486771B009FF206 /* mainTabViewController.swift */,
+				FF8BBA0F2486771B009FF206 /* mainTabViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -279,6 +314,7 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				FF8882332486316000434F6E /* collect */,
 				FF91447A2484F2F400C5B746 /* mall */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				FF889CB52482B4BC00CD72A6 /* select */,
@@ -295,6 +331,62 @@
 				BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		FF88822D248627C900434F6E /* BarButton */ = {
+			isa = PBXGroup;
+			children = (
+				FF88822E248627D700434F6E /* ViewController.swift */,
+			);
+			path = BarButton;
+			sourceTree = "<group>";
+		};
+		FF88823024862A2E00434F6E /* BarButtons */ = {
+			isa = PBXGroup;
+			children = (
+				FF88823124862A3E00434F6E /* barButtons.swift */,
+			);
+			path = BarButtons;
+			sourceTree = "<group>";
+		};
+		FF8882332486316000434F6E /* collect */ = {
+			isa = PBXGroup;
+			children = (
+				FF88823E2486441000434F6E /* category */,
+				FF8882342486317700434F6E /* collectViewController.swift */,
+				FF8882352486317700434F6E /* collectViewController.xib */,
+				FF88823824863AB100434F6E /* adTableViewCell.swift */,
+				FF88823924863AB100434F6E /* adTableViewCell.xib */,
+				FF88823C24863E3B00434F6E /* TabBarButtons.swift */,
+			);
+			path = collect;
+			sourceTree = "<group>";
+		};
+		FF88823E2486441000434F6E /* category */ = {
+			isa = PBXGroup;
+			children = (
+				FF8882442486443400434F6E /* DataManager */,
+				FF8882432486442E00434F6E /* Entity */,
+				FF88824B248648C300434F6E /* categoryViewController.swift */,
+				FF88824C248648C300434F6E /* categoryViewController.xib */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		FF8882432486442E00434F6E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF8882452486447700434F6E /* categoryResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF8882442486443400434F6E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF8882472486448900434F6E /* categoryDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		FF889CB52482B4BC00CD72A6 /* select */ = {
@@ -362,6 +454,37 @@
 				FF889CAF248292A400CD72A6 /* detailHeartResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF8BBA0B248676C4009FF206 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				BD75ABD62301B42900E0FC7A /* Entity */,
+				BD75ABD52301B40B00E0FC7A /* DataManager */,
+				BD75ABD42301B3FB00E0FC7A /* PopUp */,
+				BD9BF18522F9DCC7009E47EB /* MainViewController.swift */,
+				BD9BF18622F9DCC7009E47EB /* MainViewController.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FF8BBA0C248676EF009FF206 /* best */ = {
+			isa = PBXGroup;
+			children = (
+				FF91FFDF24879A7D002C2900 /* New Group */,
+				FF91FFDB24878191002C2900 /* bestViewController.swift */,
+				FF91FFDC24878191002C2900 /* bestViewController.xib */,
+			);
+			path = best;
+			sourceTree = "<group>";
+		};
+		FF8BBA0D248676FB009FF206 /* new */ = {
+			isa = PBXGroup;
+			children = (
+				FF91FFE224879D85002C2900 /* newViewController.swift */,
+				FF91FFE324879D85002C2900 /* newViewController.xib */,
+			);
+			path = new;
 			sourceTree = "<group>";
 		};
 		FF8D7C7E247FE5FF00A3E7C4 /* TabBar */ = {
@@ -466,6 +589,7 @@
 		FF91447A2484F2F400C5B746 /* mall */ = {
 			isa = PBXGroup;
 			children = (
+				FF88822D248627C900434F6E /* BarButton */,
 				FF91449F24858F4A00C5B746 /* mallDetail */,
 				FF91448024850E0B00C5B746 /* bookmark */,
 				FF91447F24850E0500C5B746 /* rank */,
@@ -522,6 +646,13 @@
 				FF9144A124858F9F00C5B746 /* detailMallViewController.xib */,
 			);
 			path = mallDetail;
+			sourceTree = "<group>";
+		};
+		FF91FFDF24879A7D002C2900 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FFDBBF3F2485DC1E00844D44 /* Entity */ = {
@@ -605,17 +736,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF91FFDE24878191002C2900 /* bestViewController.xib in Resources */,
 				FF9144602484A8D500C5B746 /* selectSizePopUp.storyboard in Resources */,
 				FF8AE85D2480F510003BC692 /* detailViewController.xib in Resources */,
 				FF8D7C82247FE64C00A3E7C4 /* tabBarConntroller.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				FF88824E248648C300434F6E /* categoryViewController.xib in Resources */,
 				FF8B7DBD2483F8B200DE1B5B /* selectPopUp.storyboard in Resources */,
 				FF9144A324858F9F00C5B746 /* detailMallViewController.xib in Resources */,
 				FF9144982485739800C5B746 /* TableViewCell.xib in Resources */,
+				FF8BBA112486771B009FF206 /* mainTabViewController.xib in Resources */,
+				FF8882372486317700434F6E /* collectViewController.xib in Resources */,
 				FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */,
+				FF88823B24863AB100434F6E /* adTableViewCell.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* loginViewController.xib in Resources */,
+				FF91FFE524879D85002C2900 /* newViewController.xib in Resources */,
 				FF914494248561F000C5B746 /* bookmarkViewController.xib in Resources */,
 				FF91447E2484F39F00C5B746 /* mallViewController.xib in Resources */,
 				FF914490248561DB00C5B746 /* rankViewController.xib in Resources */,
@@ -675,6 +812,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
+				FF88823A24863AB100434F6E /* adTableViewCell.swift in Sources */,
 				FF9144A224858F9F00C5B746 /* detailMallViewController.swift in Sources */,
 				FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */,
 				FF91448F248561DB00C5B746 /* rankViewController.swift in Sources */,
@@ -690,7 +828,9 @@
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				FF91445A2484A79500C5B746 /* selectColorPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
+				FF8BBA102486771B009FF206 /* mainTabViewController.swift in Sources */,
 				FF91449C2485755300C5B746 /* rankDataManager.swift in Sources */,
+				FF8882482486448900434F6E /* categoryDataManager.swift in Sources */,
 				FF8D7C8824800F4E00A3E7C4 /* loginDataManager.swift in Sources */,
 				FF9144652484AFC600C5B746 /* selectColotDataManager.swift in Sources */,
 				FFDBBF412485DC4B00844D44 /* mallDetailResponse.swift in Sources */,
@@ -705,14 +845,19 @@
 				FF8AE8572480C1FD003BC692 /* registerDataManager.swift in Sources */,
 				FF8D7C7C247F85FB00A3E7C4 /* itemCollectionViewCell.swift in Sources */,
 				FF8AE8612480FD5E003BC692 /* detailDataManager.swift in Sources */,
+				FF8882462486447700434F6E /* categoryResponse.swift in Sources */,
+				FF91FFE424879D85002C2900 /* newViewController.swift in Sources */,
 				FF8D7C8424800A2400A3E7C4 /* floaTextField.swift in Sources */,
 				FF91446B2484B65300C5B746 /* selectSizeDataManager.swift in Sources */,
 				FF91445C2484A8C000C5B746 /* selectSizePopUp.swift in Sources */,
+				FF88822F248627D700434F6E /* ViewController.swift in Sources */,
 				FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */,
 				FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */,
 				FF9144972485739800C5B746 /* TableViewCell.swift in Sources */,
 				FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */,
+				FF88824D248648C300434F6E /* categoryViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				FF91FFDD24878191002C2900 /* bestViewController.swift in Sources */,
 				FF914493248561F000C5B746 /* bookmarkViewController.swift in Sources */,
 				FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */,
 				FF9144622484A97900C5B746 /* selectSizePopUpDelegate.swift in Sources */,
@@ -720,11 +865,14 @@
 				FF91447D2484F39F00C5B746 /* mallViewController.swift in Sources */,
 				FF9144682484AFEB00C5B746 /* selectColorResponse.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				FF88823224862A3E00434F6E /* barButtons.swift in Sources */,
+				FF88823D24863E3B00434F6E /* TabBarButtons.swift in Sources */,
 				FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* loginViewController.swift in Sources */,
 				FF8AE85C2480F510003BC692 /* detailViewController.swift in Sources */,
+				FF8882362486317700434F6E /* collectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

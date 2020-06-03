@@ -12,10 +12,10 @@ import Pageboy
 class mallViewController: TabmanViewController, PageboyViewControllerDataSource , TMBarDataSource {
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         var title = ""
-        if index == 1 {
-            title = "즐겨찾기                  "
+        if index == 0 {
+            title = "랭킹                  "
         }else {
-            title = "랭킹                     "
+            title = "즐겨찾기                 "
         }
         return TMBarItem(title: title)
     }
@@ -34,10 +34,10 @@ class mallViewController: TabmanViewController, PageboyViewControllerDataSource 
     private var viewControllers = [rankViewController(), bookmarkViewController()]
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.dataSource = self
+        self.dataSource = self
         let bar = TMBar.ButtonBar()
         bar.layout.transitionStyle = .snap // Customize
-//        bar.layout.contentInset = UIEdgeInsets(top: 0, left: 100,  rbottom: 0, right: 100)
+        //        bar.layout.contentInset = UIEdgeInsets(top: 0, left: 100,  rbottom: 0, right: 100)
         bar.layout.alignment = .centerDistributed
         // Add to view
         bar.tintColor = UIColor.black
@@ -49,5 +49,22 @@ class mallViewController: TabmanViewController, PageboyViewControllerDataSource 
         bar.indicator.tintColor = UIColor.black
         addBar(bar, dataSource: self, at: .top)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let titleLabel = UILabel()
+        titleLabel.text = "  쇼핑몰".localized
+        titleLabel.textAlignment = .left
+        titleLabel.sizeToFit()
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 25)
+        var titleItem:UIBarButtonItem  = UIBarButtonItem.init(customView: titleLabel)
+        
+        let leftButtons:[UIBarButtonItem]? = [titleItem]
+        let rightButtons:[UIBarButtonItem]? = [rightBarButtonItem, searchIconBarButtonItem,tagIconBarButtonItem]
+        self.tabBarController?.navigationController?.navigationBar.topItem?.setLeftBarButtonItems(leftButtons, animated: false)
+        self.tabBarController?.navigationController?.navigationBar.topItem?.setRightBarButtonItems(rightButtons, animated: false)
+        self.tabBarController?.tabBar.barTintColor = .white
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        
+    }
 }

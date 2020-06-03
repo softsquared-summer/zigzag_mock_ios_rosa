@@ -26,20 +26,26 @@
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Gz-JTu">
-                        <rect key="frame" x="130" y="55" width="31" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Gz-JTu">
+                        <rect key="frame" x="185" y="54" width="31" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="러블리감성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-uq-Q3x">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="러블리감성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-uq-Q3x">
                         <rect key="frame" x="130" y="27.5" width="69.5" height="19.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10대/20대" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-MV-6mC">
+                        <rect key="frame" x="130" y="54" width="53" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGU-do-KR9">
-                        <rect key="frame" x="200" y="25" width="16" height="16"/>
+                        <rect key="frame" x="200" y="29" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="16" id="UWn-2X-33E"/>
                             <constraint firstAttribute="height" constant="16" id="ztw-9D-Ger"/>
@@ -51,20 +57,23 @@
                     <constraint firstItem="ydF-uJ-UXN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2KK-Nh-Vec"/>
                     <constraint firstAttribute="bottom" secondItem="ydF-uJ-UXN" secondAttribute="bottom" constant="35" id="6Yh-RI-8kz"/>
                     <constraint firstItem="abB-Qb-iu3" firstAttribute="leading" secondItem="ydF-uJ-UXN" secondAttribute="trailing" constant="8" id="6aQ-9H-AJp"/>
+                    <constraint firstItem="lbd-Gz-JTu" firstAttribute="top" secondItem="oGU-do-KR9" secondAttribute="bottom" constant="9" id="8yl-Hz-OgY"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lbd-Gz-JTu" secondAttribute="trailing" constant="104" id="AFl-VF-3BG"/>
                     <constraint firstItem="ydF-uJ-UXN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="Bu5-US-aW9"/>
-                    <constraint firstItem="fXL-uq-Q3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17.5" id="Bu8-cM-t80"/>
+                    <constraint firstItem="fXL-uq-Q3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27.5" id="GWs-pb-OgM"/>
+                    <constraint firstAttribute="bottom" secondItem="zRq-MV-6mC" secondAttribute="bottom" constant="25" id="MJs-b9-U5W"/>
                     <constraint firstItem="oGU-do-KR9" firstAttribute="leading" secondItem="fXL-uq-Q3x" secondAttribute="trailing" constant="0.5" id="OMP-LW-FZ9"/>
-                    <constraint firstItem="lbd-Gz-JTu" firstAttribute="leading" secondItem="abB-Qb-iu3" secondAttribute="trailing" constant="18" id="WFj-sY-EHI"/>
+                    <constraint firstItem="lbd-Gz-JTu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zRq-MV-6mC" secondAttribute="trailing" constant="2" id="TKx-LV-XFe"/>
+                    <constraint firstAttribute="bottom" secondItem="lbd-Gz-JTu" secondAttribute="bottom" constant="25" id="a0V-E9-Qzu"/>
+                    <constraint firstItem="oGU-do-KR9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="a4n-zK-F3f"/>
                     <constraint firstItem="abB-Qb-iu3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="cOd-WB-uL8"/>
                     <constraint firstItem="fXL-uq-Q3x" firstAttribute="leading" secondItem="abB-Qb-iu3" secondAttribute="trailing" constant="18" id="cri-cO-gbP"/>
+                    <constraint firstItem="zRq-MV-6mC" firstAttribute="leading" secondItem="abB-Qb-iu3" secondAttribute="trailing" constant="18" id="fdz-kt-GG2"/>
+                    <constraint firstItem="zRq-MV-6mC" firstAttribute="top" secondItem="fXL-uq-Q3x" secondAttribute="bottom" constant="7" id="j32-er-SGJ"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oGU-do-KR9" secondAttribute="trailing" constant="104" id="kqW-fl-uVW"/>
                     <constraint firstAttribute="bottom" secondItem="abB-Qb-iu3" secondAttribute="bottom" constant="13" id="njH-8n-tPg"/>
+                    <constraint firstItem="lbd-Gz-JTu" firstAttribute="top" secondItem="fXL-uq-Q3x" secondAttribute="bottom" constant="7" id="pLa-UN-cWA"/>
                     <constraint firstItem="oGU-do-KR9" firstAttribute="leading" secondItem="fXL-uq-Q3x" secondAttribute="trailing" constant="0.5" id="sEu-C9-c9H"/>
-                    <constraint firstAttribute="bottom" secondItem="oGU-do-KR9" secondAttribute="bottom" constant="53" id="ufI-Oz-mvM"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="lbd-Gz-JTu" secondAttribute="bottom" constant="13" id="vJO-Gd-aPw"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="lbd-Gz-JTu" secondAttribute="trailing" constant="143" id="wwv-uE-2Rr"/>
-                    <constraint firstItem="oGU-do-KR9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="ytb-b5-BHb"/>
-                    <constraint firstItem="lbd-Gz-JTu" firstAttribute="top" secondItem="fXL-uq-Q3x" secondAttribute="bottom" constant="8" id="zNp-uJ-eTp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -78,6 +87,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="zigzag_bag_standard" width="22" height="22.666666030883789"/>
+        <image name="zigzag_bag_standard" width="33" height="34"/>
     </resources>
 </document>

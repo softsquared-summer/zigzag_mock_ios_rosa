@@ -1,64 +1,42 @@
 //
-//  TutorialResponse.swift
+//  categoryResponse.swift
 //  ios
 //
-//  Created by Jerry Jung on 13/08/2019.
-//  Copyright © 2019 Jerry Jung. All rights reserved.
+//  Created by 이진하 on 2020/06/02.
+//  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import ObjectMapper
 
-@available(iOS 13.0, *)
 
-let rightBarButtonItem: UIBarButtonItem = {
-    let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
-    barButtonItem.tintColor = UIColor.red
-    return barButtonItem
-}()
-
-
-
-var adImages = [
-    "광고1",
-    "광고2",
-    "광고3",
-    "광고4",
-    "광고5",
-    "광고1",
-    "광고2",
-    "광고3",
-    "광고4",
-    "광고5"
-]
-
-struct itemResponse {
+struct categoryResponse {
     var code: Int!
     var message: String!
     var is_success: Bool!
-    var items: [items]!
-    
+    var result: [categoryItem]!
+
 }
 
-extension itemResponse: Mappable {
-    
+@available(iOS 13.0, *)
+extension categoryResponse: Mappable {
+
     init?(map: Map) {
     }
-    
+
     mutating func mapping(map: Map) {
         code <- map["code"]
         message <- map["message"]
         is_success <- map["is_success"]
-        items <- map["result"]
-        
-    }
-    
-}
+        result <- map["result"]
 
-struct items {
+    }
+
+}
+struct categoryItem {
     var item_id: Int!
     var item_category: String!
     var item_category_detail: String!
-    var item_image: itemImage!
+    var item_image: categoryItemImage!
     var is_free_ship: String!
     var is_heart: String!
     var mall_name: String!
@@ -68,7 +46,7 @@ struct items {
     
 }
 
-extension items: Mappable {
+extension  categoryItem: Mappable {
     
     init?(map: Map) {
     }
@@ -87,11 +65,11 @@ extension items: Mappable {
     }
     
 }
-struct itemImage{
+struct categoryItemImage{
     var url1:String!
     var url2:String!
 }
-extension itemImage:Mappable{
+extension categoryItemImage:Mappable{
     init?(map: Map) {
     }
     

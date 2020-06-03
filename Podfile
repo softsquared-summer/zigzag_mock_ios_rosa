@@ -19,6 +19,7 @@ target 'ios' do
   pod 'WCLShineButton'
  pod 'GMStepper'
 pod 'Tabman', '~> 2.9'
+pod 'FSPagerView'
  
  
  # Workaround for Cocoapods issue #7606

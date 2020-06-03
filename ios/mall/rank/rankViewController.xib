@@ -45,7 +45,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="WQs-GG-jHa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Hx7-SD-h0w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r1K-f5-KHm" secondAttribute="bottom" id="Mrf-cG-c7c"/>

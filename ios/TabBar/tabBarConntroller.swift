@@ -24,19 +24,20 @@ class tabBarConntroller: UITabBarController,UITabBarControllerDelegate {
         book.title = "first"
         rank.view.backgroundColor = UIColor.black
         rank.title = "seocond"
-        let pages:[UIViewController] = [book,rank]
         super.viewWillAppear(animated)
-        let main = MainViewController()
+        let main = mainTabViewController()
         let login = loginViewController()
         let mall = mallViewController()
-
+        let collect = collectViewController()
         let icon1 = UITabBarItem(title: nil, image: UIImage(named: "main_icon"), selectedImage: UIImage(named: "main_icon_selected"))
         let icon2 = UITabBarItem(title: nil, image: UIImage(named: "my_icon"), selectedImage: UIImage(named: "my_icon_selected"))
         let icon3 = UITabBarItem(title: nil, image: UIImage(named: "mall"), selectedImage: UIImage(named: "mall_selected"))
+        let icon4 = UITabBarItem(title: nil, image: UIImage(named: "collect"), selectedImage: UIImage(named: "collect_selected"))
         main.tabBarItem = icon1
         login.tabBarItem = icon2
         mall.tabBarItem = icon3
-        let controllers = [main,mall,login]
+        collect.tabBarItem = icon4
+        let controllers = [main,mall,collect,login]
         self.viewControllers = controllers
         
         

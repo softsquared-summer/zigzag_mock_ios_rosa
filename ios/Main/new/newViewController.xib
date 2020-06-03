@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="newViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="itemCollection" destination="DOr-KL-FJH" id="EHe-gm-kYm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-KL-FJH">
+                    <rect key="frame" x="0.0" y="81" width="414" height="781"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QTg-Cb-2of">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 취향 쇼핑몰과 비슷한 신상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brl-kZ-VS8">
+                    <rect key="frame" x="20" y="57" width="225.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd5-8F-SCi">
+                    <rect key="frame" x="248" y="58" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="8Jc-n7-WVf"/>
+                        <constraint firstAttribute="height" constant="23" id="YvU-nr-f1P"/>
+                    </constraints>
+                    <state key="normal" image="스크린샷 2020-06-03 오후 6.06.32"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="brl-kZ-VS8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="2yN-Wf-GxQ"/>
+                <constraint firstItem="DOr-KL-FJH" firstAttribute="top" secondItem="nd5-8F-SCi" secondAttribute="bottom" id="5Fm-hi-Kla"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nd5-8F-SCi" secondAttribute="trailing" constant="143" id="9xL-Oi-ymV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DOr-KL-FJH" secondAttribute="trailing" id="B0D-FW-fWB"/>
+                <constraint firstItem="nd5-8F-SCi" firstAttribute="leading" secondItem="brl-kZ-VS8" secondAttribute="trailing" constant="2.5" id="RcG-kq-FBl"/>
+                <constraint firstItem="DOr-KL-FJH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="avg-Rn-qlX"/>
+                <constraint firstItem="DOr-KL-FJH" firstAttribute="top" secondItem="brl-kZ-VS8" secondAttribute="bottom" id="e59-FA-tUr"/>
+                <constraint firstItem="brl-kZ-VS8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="m0n-iY-BbC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DOr-KL-FJH" secondAttribute="bottom" id="pXf-0u-EC0"/>
+                <constraint firstItem="nd5-8F-SCi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="wGw-7c-ZhL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="스크린샷 2020-06-03 오후 6.06.32" width="48" height="50"/>
+    </resources>
+</document>
