@@ -44,7 +44,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="185" height="225"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무료배송" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-mK-QGw">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="무료배송" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-mK-QGw">
                         <rect key="frame" x="8" y="194" width="45" height="20"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.99134376120000001" green="0.99611896280000001" blue="0.99246028119999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -80,7 +80,7 @@
                 <constraint firstItem="di3-CT-ht5" firstAttribute="leading" secondItem="4lZ-f0-pPd" secondAttribute="trailing" constant="0.5" id="bU2-Xq-0VO"/>
                 <constraint firstItem="7ua-OD-0bw" firstAttribute="top" secondItem="Sz7-vw-35M" secondAttribute="bottom" constant="8" id="cB6-88-LRN"/>
                 <constraint firstItem="Sz7-vw-35M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ead-AP-X0x"/>
-                <constraint firstItem="X0f-mK-QGw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="194" id="fE8-rp-xlT"/>
+                <constraint firstItem="X0f-mK-QGw" firstAttribute="top" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="194" id="fE8-rp-xlT"/>
                 <constraint firstItem="4lZ-f0-pPd" firstAttribute="top" secondItem="nlt-vH-26H" secondAttribute="bottom" constant="5" id="fRk-Qd-rbV"/>
                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="di3-CT-ht5" secondAttribute="trailing" constant="89" id="gcV-2k-gaQ"/>
                 <constraint firstAttribute="trailing" secondItem="X0f-mK-QGw" secondAttribute="trailing" constant="132" id="gcr-Fd-phn"/>

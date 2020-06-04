@@ -49,7 +49,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        self.tabBarController?.navigationItem.rightBarButtonItem = registerBarButtonItem
+        self.navigationItem.rightBarButtonItem = registerBarButtonItem
 
     }
     
@@ -95,6 +95,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
     
     lazy var registerBarButtonItem: UIBarButtonItem = {
         let barButtonItem = UIBarButtonItem(title: "회원가입", style: .plain, target: self, action: #selector(addTapped))
+        barButtonItem.image = UIImage(named: "register-1")
         barButtonItem.tintColor = UIColor.red
         return barButtonItem
     }()

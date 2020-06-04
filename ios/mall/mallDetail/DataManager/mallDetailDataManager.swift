@@ -12,17 +12,19 @@ import AlamofireObjectMapper
 @available(iOS 13.0, *)
 class detailMallDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var token = UserDefaults.standard.value(forKey: "token") as! String
     func getUser(_ detailMallVC: detailMallViewController, mall_id:Int){
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/malls/\(mall_id)", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
+            .request("\(self.appDelegate.baseUrl)/malls/\(mall_id)", method: .get,headers: ["x-access-token": token])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<detailMallResponse>) in
                 switch response.result {
                    
                 case .success(let detailMallResponse):
                     if detailMallResponse.code == 100 {
-                        
+       
+                        detailMallVC.navigationController?.navigationBar.topItem?.title = detailMallResponse.result.mall_name
                         detailMallVC.mall_name.text = detailMallResponse.result.mall_name
                         detailMallVC.mallImage.image = UIImage(named:
                             "mall_image")

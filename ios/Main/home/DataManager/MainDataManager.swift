@@ -8,15 +8,15 @@
 
 import Alamofire
 import AlamofireObjectMapper
-
+//"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0zMCAyMzo0NDo0MSIsImlkIjoidGVzdCIsInB3IjoiMTIzNCJ9.wqikNdprILNQEYky5-NvoWsO9b-pswfs8555uv-3KHI"
 @available(iOS 13.0, *)
 class MainDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    //    let token:String = UserDefaults.standard.value(forKey: "token") as! String
+    var token = UserDefaults.standard.value(forKey: "token") as! String
     func getItems(_ mainViewController: MainViewController,page: Int) {
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/items?page=\(page)", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0zMCAyMzo0NDo0MSIsImlkIjoidGVzdCIsInB3IjoiMTIzNCJ9.wqikNdprILNQEYky5-NvoWsO9b-pswfs8555uv-3KHI"])
+            .request("\(self.appDelegate.baseUrl)/items?page=\(page)", method: .get,headers: ["x-access-token": token])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<itemResponse>) in
                 switch response.result {

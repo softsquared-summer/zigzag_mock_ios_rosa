@@ -12,18 +12,19 @@ import AlamofireObjectMapper
 @available(iOS 13.0, *)
 class rankDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-
-    func getUser(_ rankViewController: rankViewController){
+    var token = UserDefaults.standard.value(forKey: "token") as! String
+    func getMalls(_ rankViewController: rankViewController,page:Int){
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/malls", method: .get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
+            .request("\(self.appDelegate.baseUrl)/malls?page=\(page)", method: .get,headers: ["x-access-token": token])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<rankResponse>) in
                 switch response.result {
                    
                 case .success(let rankResponse):
                     if rankResponse.code == 100 {
-                        rankViewController.malls = rankResponse.result
+                        let malls:[mall] = rankResponse.result
+                        rankViewController.malls.append(contentsOf: malls)
                         rankViewController.mallTableView.reloadData()
                     } else if rankResponse.code == 201{
                     

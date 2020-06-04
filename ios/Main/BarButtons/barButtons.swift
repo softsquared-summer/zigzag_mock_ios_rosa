@@ -8,12 +8,28 @@
 
 import UIKit
 
+
+
+let menuBarButtonItem: UIBarButtonItem = {
+    let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
+    barButtonItem.image = UIImage(named: "메뉴")
+    return barButtonItem
+}()
+
+
+let heartBarButtonItem: UIBarButtonItem = {
+    let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
+    barButtonItem.image = UIImage(named: "가위")
+    return barButtonItem
+}()
+
 let rightBarButtonItem: UIBarButtonItem = {
     let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
     barButtonItem.imageInsets = .init(top: 0, left:0, bottom: 0, right: 0)
     barButtonItem.image = UIImage(named: "zigzag_bag_standard")
     return barButtonItem
 }()
+
 let searchBarButtonItem: UIBarButtonItem = {
     let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: MainViewController(), action: nil)
     let button = UIButton()

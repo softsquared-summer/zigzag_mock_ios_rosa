@@ -16,6 +16,7 @@ class itemCollectionViewCell: UICollectionViewCell {
     var item_id:Int = 0
     var isHeart:Bool = false
     var superController:UIViewController = MainViewController()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.discount.textColor = ColorPalette.zigzagPink
@@ -29,30 +30,23 @@ class itemCollectionViewCell: UICollectionViewCell {
         
         
         
-        
         var param1 = WCLShineParams()
         param1.bigShineColor = ColorPalette.zigzagPink
         param1.smallShineColor = UIColor(rgb: (170,170,170))
         param1.animDuration = 1
         bt1 = WCLShineButton(frame: .init(x: 150, y:194, width: 20, height: 20), params: param1)
         bt1.fillColor = ColorPalette.zigzagPink
-        bt1.color = UIColor(rgb: (170,170,170))
         bt1.color = UIColor.systemGray5
         bt1.image = .custom(UIImage(named:"emptyheart")!)
-        if isHeart == true {
-            bt1.isSelected == true
-        }else {
-            bt1.isSelected == false
-        }
-        bt1.addTarget(self, action: #selector(heartAction), for: .valueChanged)
+//        if isHeart == true {
+//            bt1.isSelected = true
+//        }else {
+//            bt1.isSelected = false
+//        }
         self.addSubview(bt1)
         
     }
-    @objc func heartAction(){
-        print(self.item_id)
-        print(bt1.isSelected)
-        mainHeartDataManager().set_heart(self.superController as! MainViewController, item_id: self.item_id)
-    }
+    
     @IBOutlet weak var free_ship: UILabel!
     
     

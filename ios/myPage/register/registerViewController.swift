@@ -57,6 +57,10 @@ class registerViewController: UIViewController , UITextFieldDelegate {
     var checkBoxes:[BEMCheckBox?] = []
     var isAgree:[String:String?] = [:]
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
+            self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton")
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         super.viewDidLoad()
         self.is_service_agree.delegate = self
         self.is_privacy_agree.delegate = self

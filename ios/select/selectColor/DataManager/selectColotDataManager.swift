@@ -12,11 +12,11 @@ import AlamofireObjectMapper
 @available(iOS 13.0, *)
 class selectColorDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+    var token = UserDefaults.standard.value(forKey: "token") as! String
     func getDetail(_ selectColorPopUp: selectColorPopUp , item_id:Int){
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/items/\(item_id)/colors", method:.get,headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
+            .request("\(self.appDelegate.baseUrl)/items/\(item_id)/colors", method:.get,headers: ["x-access-token": token])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<selectColorResponse>) in
                 switch response.result {

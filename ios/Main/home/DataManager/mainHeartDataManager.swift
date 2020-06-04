@@ -13,12 +13,13 @@ import AlamofireObjectMapper
 class mainHeartDataManager {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var token = UserDefaults.standard.value(forKey: "token") as! String
     func set_heart(_ mainViewController: MainViewController , item_id:Int){
         let params:[String:Int] = [
             "item_id" : item_id
         ]
         Alamofire
-            .request("\(self.appDelegate.baseUrl)/heart", method:.post, parameters: params,encoding: JSONEncoding.default, headers: ["x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRlIjoiMjAyMC0wNS0yOSAwMDo0ODo1NiIsImlkIjoiZGt3bHNmazIyQG5hdmVyLmNvbSIsInB3IjoiMTIzNCJ9.KyeHmAYHrqYE0gHpuaP-LeQcxx8O4-kyAIg_3rwbUPM"])
+            .request("\(self.appDelegate.baseUrl)/heart", method:.post, parameters: params,encoding: JSONEncoding.default, headers: ["x-access-token": token])
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<detailHeartResponse>) in
                 switch response.result {

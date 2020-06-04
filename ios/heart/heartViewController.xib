@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="heartViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="heartCollection" destination="drX-m3-Ex8" id="LnT-U2-GQc"/>
+                <outlet property="heartCount" destination="ahg-V4-Lem" id="DfY-yU-yXM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk3-JD-KVJ">
+                    <rect key="frame" x="20" y="64" width="67" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="0rJ-tF-irK"/>
+                        <constraint firstAttribute="height" constant="45" id="GPB-IW-oro"/>
+                    </constraints>
+                    <state key="normal" image="스크린샷 2020-06-03 오후 9.19.56"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-Jw-4Ux">
+                    <rect key="frame" x="350" y="64" width="44" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="REL-Mv-c4o"/>
+                        <constraint firstAttribute="width" constant="44" id="gTn-4d-C6O"/>
+                    </constraints>
+                    <state key="normal" image="스크린샷 2020-06-03 오후 9.20.09"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCF-FI-bMY">
+                    <rect key="frame" x="324" y="114" width="70" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="5c0-Rq-weT"/>
+                        <constraint firstAttribute="width" constant="70" id="7S9-ze-BLR"/>
+                    </constraints>
+                    <state key="normal" image="스크린샷 2020-06-03 오후 9.20.19"/>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="drX-m3-Ex8">
+                    <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0AP-zx-KBq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-V4-Lem">
+                    <rect key="frame" x="20" y="119" width="38" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ahg-V4-Lem" firstAttribute="top" secondItem="Mk3-JD-KVJ" secondAttribute="bottom" constant="10" id="0Xu-sc-eVk"/>
+                <constraint firstItem="drX-m3-Ex8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Eiy-az-jaC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u1B-Jw-4Ux" secondAttribute="trailing" constant="20" id="GZh-RK-dTM"/>
+                <constraint firstItem="pCF-FI-bMY" firstAttribute="top" secondItem="u1B-Jw-4Ux" secondAttribute="bottom" constant="10" id="ODX-E6-DAd"/>
+                <constraint firstItem="Mk3-JD-KVJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Pwa-VN-5ae"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pCF-FI-bMY" secondAttribute="trailing" constant="20" id="W5C-7n-iCV"/>
+                <constraint firstItem="u1B-Jw-4Ux" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="b4h-jj-PM5"/>
+                <constraint firstItem="Mk3-JD-KVJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="c6t-d2-C29"/>
+                <constraint firstItem="drX-m3-Ex8" firstAttribute="top" secondItem="ahg-V4-Lem" secondAttribute="bottom" constant="2" id="cec-7X-k05"/>
+                <constraint firstItem="ahg-V4-Lem" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lUv-rp-DJn"/>
+                <constraint firstItem="drX-m3-Ex8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="toN-ql-8R8"/>
+                <constraint firstItem="drX-m3-Ex8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wfr-rR-0MW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="147.99107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="스크린샷 2020-06-03 오후 9.19.56" width="120" height="84"/>
+        <image name="스크린샷 2020-06-03 오후 9.20.09" width="92" height="84"/>
+        <image name="스크린샷 2020-06-03 오후 9.20.19" width="146" height="48"/>
+    </resources>
+</document>

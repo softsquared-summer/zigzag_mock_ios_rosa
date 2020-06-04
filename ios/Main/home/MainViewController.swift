@@ -8,11 +8,11 @@
 
 import UIKit
 import FSPagerView
+import WCLShineButton
 
 @available(iOS 13.0, *)
 class MainViewController:  UIViewController, UICollectionViewDataSource {
     
- 
     
     let section = ["sponsored","second"]
     var Items:[items] = []
@@ -20,16 +20,16 @@ class MainViewController:  UIViewController, UICollectionViewDataSource {
         items(item_id: 2, item_category: "상의", item_category_detail: "티셔츠", item_image: nil, is_free_ship: "N", is_heart: "N", mall_name: "오브로밍", item_name: "브이넥 셔링 크롭 반팔", discount: "0%", price: "21,000"),
         items(item_id: 1, item_category: "원피스/세트", item_category_detail: "롱원피스", item_image: nil, is_free_ship: "N", is_heart: "N", mall_name: "기프티박스", item_name: "메기 린넨 스퀘어넥", discount: "0%", price: "15,900"),
         items(item_id: 7, item_category: "상의", item_category_detail: "블라우스", item_image: nil, is_free_ship: "N", is_heart: "Y", mall_name: "러블리감성", item_name: "봄 샌디 롱 트렌치코트", discount: "12%", price: "67,000")
-    
+        
     ]
-
+    
     
     
     @IBOutlet weak var itemCollection: UICollectionView!
     @IBOutlet weak var pagecontrol: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-//pagerView
+        //pagerView
         let pagerView = FSPagerView(frame: CGRect(x: 0, y: 55, width: self.view.frame.width, height: 80))
         pagerView.dataSource = self
         pagerView.delegate = self
@@ -43,35 +43,40 @@ class MainViewController:  UIViewController, UICollectionViewDataSource {
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 7, left: 17, bottom: 10, right:17)
         itemCollection.collectionViewLayout = layout
-
+        
         
         let itemCellNib = UINib(nibName: "itemCollectionViewCell", bundle: nil)
         self.itemCollection.register(itemCellNib, forCellWithReuseIdentifier: "item")
         self.itemCollection.delegate = self
         self.itemCollection.dataSource = self
-
+        
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         //data load
         MainDataManager().getItems(self, page: 1)
         MainDataManager().getItems(self, page: 2)
         MainDataManager().getItems(self, page: 3)
         MainDataManager().getItems(self, page: 4)
         //navigation Bar add
-        self.tabBarController?.navigationItem.rightBarButtonItem = rightBarButtonItem
-
+//        self.tabBarController?.navigationItem.rightBarButtonItem = basketBarButtonItem
+        
         let searchItem:UIBarButtonItem = searchBarButtonItem
         let zigzag:UIBarButtonItem = zigzagBarButtonItem
         let barButtons:[UIBarButtonItem]? = [zigzag , searchItem]
-        let rightButtons:[UIBarButtonItem]? = [rightBarButtonItem]
+        let rightButtons:[UIBarButtonItem]? = [basketBarButtonItem]
         self.tabBarController?.navigationController?.navigationBar.topItem?.setLeftBarButtonItems(barButtons, animated: false)
         self.tabBarController?.navigationController?.navigationBar.topItem?.setRightBarButtonItems(rightButtons, animated: false)
         self.tabBarController?.navigationController?.navigationBar.barTintColor = .white
         self.tabBarController?.navigationController?.navigationBar.isTranslucent = false
         self.tabBarController?.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.tabBarController?.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
+            self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton")
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         
         //tabBar color
         self.tabBarController?.tabBar.barTintColor = .white
@@ -80,8 +85,19 @@ class MainViewController:  UIViewController, UICollectionViewDataSource {
         
     }
     
-    @objc func heartAction(){
-        print("action")
+    lazy var basketBarButtonItem: UIBarButtonItem = {
+        let barButtonItem = UIBarButtonItem(title: "검색", style: .plain, target: self, action: #selector(goBasketList))
+        barButtonItem.imageInsets = .init(top: 0, left:0, bottom: 0, right: 0)
+        barButtonItem.image = UIImage(named: "zigzag_bag_standard")
+        return barButtonItem
+    }()
+    
+    @objc func goBasketList(_ sender: Any) {
+        guard let navigationViewController = self.navigationController else {
+            self.presentAlert(title: "오류", message: "화면 이동에 실패하였습니다.")
+            return
+        }
+        navigationViewController.pushViewController(basketViewController(), animated: true)
     }
     
 }
@@ -107,6 +123,11 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
             cell.free_ship.text = ""
             cell.free_ship.isHidden = true
         }
+
+        cell.bt1.tag = sectionItem[indexPath.section][indexPath.item].item_id
+        cell.bt1.addTarget(self, action: #selector(heartAction), for: .valueChanged)
+  
+        cell.item_id = sectionItem[indexPath.section][indexPath.item].item_id
         if sectionItem[indexPath.section][indexPath.item].is_heart == "Y" {
             cell.isHeart = true
             cell.bt1.isSelected = true
@@ -116,10 +137,8 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         }
         cell.free_ship.layer.zPosition = 1
         cell.price.text = sectionItem[indexPath.section][indexPath.item].price
-        cell.item_id = sectionItem[indexPath.section][indexPath.item].item_id
-        cell.superController = self
         cell.discount.text = sectionItem[indexPath.section][indexPath.item].discount
-            
+        
         
         return cell
     }
@@ -149,6 +168,15 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         return section.count
     }
     
+
+    @objc func heartAction(_ sender: WCLShineButton){
+        mainHeartDataManager().set_heart(self, item_id: sender.tag)
+        
+        
+    }
+    
+
+    
     
 }
 extension MainViewController: FSPagerViewDelegate,FSPagerViewDataSource{
@@ -157,10 +185,10 @@ extension MainViewController: FSPagerViewDelegate,FSPagerViewDataSource{
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
-         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
+        let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
         cell.imageView!.image = UIImage(named: adImages[index])
-
-          return cell
+        
+        return cell
     }
     func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
         pagecontrol.currentPage = targetIndex

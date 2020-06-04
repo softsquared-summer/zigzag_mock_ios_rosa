@@ -55,8 +55,8 @@ class mallViewController: TabmanViewController, PageboyViewControllerDataSource 
         titleLabel.text = "  쇼핑몰".localized
         titleLabel.textAlignment = .left
         titleLabel.sizeToFit()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 25)
-        var titleItem:UIBarButtonItem  = UIBarButtonItem.init(customView: titleLabel)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        let titleItem:UIBarButtonItem  = UIBarButtonItem.init(customView: titleLabel)
         
         let leftButtons:[UIBarButtonItem]? = [titleItem]
         let rightButtons:[UIBarButtonItem]? = [rightBarButtonItem, searchIconBarButtonItem,tagIconBarButtonItem]

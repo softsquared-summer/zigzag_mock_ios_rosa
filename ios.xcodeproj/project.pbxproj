@@ -62,6 +62,14 @@
 		FF8D7C8A2480123200A3E7C4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C892480123200A3E7C4 /* UserResponse.swift */; };
 		FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D7C8C24802CC300A3E7C4 /* registerViewController.swift */; };
 		FF8D7C8F24802CC300A3E7C4 /* registerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8D7C8D24802CC300A3E7C4 /* registerViewController.xib */; };
+		FF90A0CF2488C0BA0005FE17 /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90A0CD2488C0BA0005FE17 /* myPageViewController.swift */; };
+		FF90A0D02488C0BA0005FE17 /* myPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF90A0CE2488C0BA0005FE17 /* myPageViewController.xib */; };
+		FF90A0D42488E26E0005FE17 /* basketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90A0D22488E26E0005FE17 /* basketViewController.swift */; };
+		FF90A0D52488E26E0005FE17 /* basketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF90A0D32488E26E0005FE17 /* basketViewController.xib */; };
+		FF90A0D92488F1040005FE17 /* basketListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90A0D82488F1040005FE17 /* basketListResponse.swift */; };
+		FF90A0DC2488F3F40005FE17 /* basketListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90A0DB2488F3F40005FE17 /* basketListDataManager.swift */; };
+		FF90A0DF2488FC9B0005FE17 /* basketItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90A0DD2488FC9B0005FE17 /* basketItemTableViewCell.swift */; };
+		FF90A0E02488FC9B0005FE17 /* basketItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF90A0DE2488FC9B0005FE17 /* basketItemTableViewCell.xib */; };
 		FF9144542484A30500C5B746 /* selectColorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144532484A30500C5B746 /* selectColorPopUp.swift */; };
 		FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9144572484A5BA00C5B746 /* selectColorPopUp.storyboard */; };
 		FF91445A2484A79500C5B746 /* selectColorPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9144592484A79500C5B746 /* selectColorPopUpDelegate.swift */; };
@@ -90,6 +98,13 @@
 		FF91FFDE24878191002C2900 /* bestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91FFDC24878191002C2900 /* bestViewController.xib */; };
 		FF91FFE424879D85002C2900 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91FFE224879D85002C2900 /* newViewController.swift */; };
 		FF91FFE524879D85002C2900 /* newViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91FFE324879D85002C2900 /* newViewController.xib */; };
+		FF91FFEB2487B7E2002C2900 /* heartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91FFE92487B7E2002C2900 /* heartViewController.swift */; };
+		FF91FFEC2487B7E2002C2900 /* heartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91FFEA2487B7E2002C2900 /* heartViewController.xib */; };
+		FFB158242487CF82005D254C /* heartCountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB158232487CF82005D254C /* heartCountDataManager.swift */; };
+		FFB158262487D0D3005D254C /* heartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB158252487D0D3005D254C /* heartResponse.swift */; };
+		FFB158282487D4E3005D254C /* heartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB158272487D4E3005D254C /* heartDataManager.swift */; };
+		FFB1582D2487DBD4005D254C /* heartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1582B2487DBD4005D254C /* heartCollectionViewCell.swift */; };
+		FFB1582E2487DBD4005D254C /* heartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1582C2487DBD4005D254C /* heartCollectionViewCell.xib */; };
 		FFDBBF412485DC4B00844D44 /* mallDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */; };
 		FFDBBF442485DC9800844D44 /* mallDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */; };
 		FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */; };
@@ -155,6 +170,14 @@
 		FF8D7C892480123200A3E7C4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		FF8D7C8C24802CC300A3E7C4 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		FF8D7C8D24802CC300A3E7C4 /* registerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = registerViewController.xib; sourceTree = "<group>"; };
+		FF90A0CD2488C0BA0005FE17 /* myPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
+		FF90A0CE2488C0BA0005FE17 /* myPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myPageViewController.xib; sourceTree = "<group>"; };
+		FF90A0D22488E26E0005FE17 /* basketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketViewController.swift; sourceTree = "<group>"; };
+		FF90A0D32488E26E0005FE17 /* basketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basketViewController.xib; sourceTree = "<group>"; };
+		FF90A0D82488F1040005FE17 /* basketListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketListResponse.swift; sourceTree = "<group>"; };
+		FF90A0DB2488F3F40005FE17 /* basketListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketListDataManager.swift; sourceTree = "<group>"; };
+		FF90A0DD2488FC9B0005FE17 /* basketItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basketItemTableViewCell.swift; sourceTree = "<group>"; };
+		FF90A0DE2488FC9B0005FE17 /* basketItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basketItemTableViewCell.xib; sourceTree = "<group>"; };
 		FF9144532484A30500C5B746 /* selectColorPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColorPopUp.swift; sourceTree = "<group>"; };
 		FF9144572484A5BA00C5B746 /* selectColorPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectColorPopUp.storyboard; sourceTree = "<group>"; };
 		FF9144592484A79500C5B746 /* selectColorPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectColorPopUpDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +206,13 @@
 		FF91FFDC24878191002C2900 /* bestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bestViewController.xib; sourceTree = "<group>"; };
 		FF91FFE224879D85002C2900 /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 		FF91FFE324879D85002C2900 /* newViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newViewController.xib; sourceTree = "<group>"; };
+		FF91FFE92487B7E2002C2900 /* heartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartViewController.swift; sourceTree = "<group>"; };
+		FF91FFEA2487B7E2002C2900 /* heartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = heartViewController.xib; sourceTree = "<group>"; };
+		FFB158232487CF82005D254C /* heartCountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartCountDataManager.swift; sourceTree = "<group>"; };
+		FFB158252487D0D3005D254C /* heartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartResponse.swift; sourceTree = "<group>"; };
+		FFB158272487D4E3005D254C /* heartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartDataManager.swift; sourceTree = "<group>"; };
+		FFB1582B2487DBD4005D254C /* heartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFB1582C2487DBD4005D254C /* heartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = heartCollectionViewCell.xib; sourceTree = "<group>"; };
 		FFDBBF402485DC4B00844D44 /* mallDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailResponse.swift; sourceTree = "<group>"; };
 		FFDBBF432485DC9800844D44 /* mallDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallDetailDataManager.swift; sourceTree = "<group>"; };
 		FFDBBF452485E7F400844D44 /* mallItemDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mallItemDataManager.swift; sourceTree = "<group>"; };
@@ -314,14 +344,15 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				FF90A0D12488E2480005FE17 /* basket */,
+				FF90A0CC2488C0960005FE17 /* myPage */,
+				FF91FFE82487B467002C2900 /* heart */,
 				FF8882332486316000434F6E /* collect */,
 				FF91447A2484F2F400C5B746 /* mall */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				FF889CB52482B4BC00CD72A6 /* select */,
 				FF8AE8592480F4FC003BC692 /* detail */,
 				FF8AE8582480DC08003BC692 /* search */,
-				FF8D7C8B24802CB300A3E7C4 /* register */,
-				BD9BF17022F9C318009E47EB /* login */,
 				FF8D7C7E247FE5FF00A3E7C4 /* TabBar */,
 				BD9BF16F22F9C314009E47EB /* Main */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
@@ -471,7 +502,6 @@
 		FF8BBA0C248676EF009FF206 /* best */ = {
 			isa = PBXGroup;
 			children = (
-				FF91FFDF24879A7D002C2900 /* New Group */,
 				FF91FFDB24878191002C2900 /* bestViewController.swift */,
 				FF91FFDC24878191002C2900 /* bestViewController.xib */,
 			);
@@ -521,6 +551,46 @@
 				FF8D7C8D24802CC300A3E7C4 /* registerViewController.xib */,
 			);
 			path = register;
+			sourceTree = "<group>";
+		};
+		FF90A0CC2488C0960005FE17 /* myPage */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BF17022F9C318009E47EB /* login */,
+				FF8D7C8B24802CB300A3E7C4 /* register */,
+				FF90A0CD2488C0BA0005FE17 /* myPageViewController.swift */,
+				FF90A0CE2488C0BA0005FE17 /* myPageViewController.xib */,
+			);
+			path = myPage;
+			sourceTree = "<group>";
+		};
+		FF90A0D12488E2480005FE17 /* basket */ = {
+			isa = PBXGroup;
+			children = (
+				FF90A0DA2488F3CF0005FE17 /* DataManager */,
+				FF90A0D72488F0EB0005FE17 /* basketListResponse */,
+				FF90A0D22488E26E0005FE17 /* basketViewController.swift */,
+				FF90A0D32488E26E0005FE17 /* basketViewController.xib */,
+				FF90A0DD2488FC9B0005FE17 /* basketItemTableViewCell.swift */,
+				FF90A0DE2488FC9B0005FE17 /* basketItemTableViewCell.xib */,
+			);
+			path = basket;
+			sourceTree = "<group>";
+		};
+		FF90A0D72488F0EB0005FE17 /* basketListResponse */ = {
+			isa = PBXGroup;
+			children = (
+				FF90A0D82488F1040005FE17 /* basketListResponse.swift */,
+			);
+			path = basketListResponse;
+			sourceTree = "<group>";
+		};
+		FF90A0DA2488F3CF0005FE17 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF90A0DB2488F3F40005FE17 /* basketListDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		FF9144512484A0FA00C5B746 /* selectColor */ = {
@@ -648,11 +718,34 @@
 			path = mallDetail;
 			sourceTree = "<group>";
 		};
-		FF91FFDF24879A7D002C2900 /* New Group */ = {
+		FF91FFE82487B467002C2900 /* heart */ = {
 			isa = PBXGroup;
 			children = (
+				FF91FFEE2487BB64002C2900 /* DataManager */,
+				FF91FFED2487BB5C002C2900 /* Entity */,
+				FF91FFE92487B7E2002C2900 /* heartViewController.swift */,
+				FF91FFEA2487B7E2002C2900 /* heartViewController.xib */,
+				FFB1582B2487DBD4005D254C /* heartCollectionViewCell.swift */,
+				FFB1582C2487DBD4005D254C /* heartCollectionViewCell.xib */,
 			);
-			path = "New Group";
+			path = heart;
+			sourceTree = "<group>";
+		};
+		FF91FFED2487BB5C002C2900 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FFB158252487D0D3005D254C /* heartResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF91FFEE2487BB64002C2900 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FFB158232487CF82005D254C /* heartCountDataManager.swift */,
+				FFB158272487D4E3005D254C /* heartDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		FFDBBF3F2485DC1E00844D44 /* Entity */ = {
@@ -747,6 +840,8 @@
 				FF9144982485739800C5B746 /* TableViewCell.xib in Resources */,
 				FF8BBA112486771B009FF206 /* mainTabViewController.xib in Resources */,
 				FF8882372486317700434F6E /* collectViewController.xib in Resources */,
+				FF91FFEC2487B7E2002C2900 /* heartViewController.xib in Resources */,
+				FF90A0D52488E26E0005FE17 /* basketViewController.xib in Resources */,
 				FF8D7C7D247F85FB00A3E7C4 /* itemCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				FF9144582484A5BA00C5B746 /* selectColorPopUp.storyboard in Resources */,
@@ -756,9 +851,12 @@
 				FF914494248561F000C5B746 /* bookmarkViewController.xib in Resources */,
 				FF91447E2484F39F00C5B746 /* mallViewController.xib in Resources */,
 				FF914490248561DB00C5B746 /* rankViewController.xib in Resources */,
+				FF90A0D02488C0BA0005FE17 /* myPageViewController.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
+				FF90A0E02488FC9B0005FE17 /* basketItemTableViewCell.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				FF8D7C8F24802CC300A3E7C4 /* registerViewController.xib in Resources */,
+				FFB1582E2487DBD4005D254C /* heartCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,10 +912,13 @@
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				FF88823A24863AB100434F6E /* adTableViewCell.swift in Sources */,
 				FF9144A224858F9F00C5B746 /* detailMallViewController.swift in Sources */,
+				FF90A0CF2488C0BA0005FE17 /* myPageViewController.swift in Sources */,
 				FF8AE8552480C1EA003BC692 /* registerRespnse.swift in Sources */,
 				FF91448F248561DB00C5B746 /* rankViewController.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				FF889CB22482934700CD72A6 /* detailHeartDataManager.swift in Sources */,
+				FF91FFEB2487B7E2002C2900 /* heartViewController.swift in Sources */,
+				FFB158242487CF82005D254C /* heartCountDataManager.swift in Sources */,
 				FF9144542484A30500C5B746 /* selectColorPopUp.swift in Sources */,
 				FF8AE8632480FD89003BC692 /* detailResponse.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
@@ -830,6 +931,7 @@
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				FF8BBA102486771B009FF206 /* mainTabViewController.swift in Sources */,
 				FF91449C2485755300C5B746 /* rankDataManager.swift in Sources */,
+				FF90A0D92488F1040005FE17 /* basketListResponse.swift in Sources */,
 				FF8882482486448900434F6E /* categoryDataManager.swift in Sources */,
 				FF8D7C8824800F4E00A3E7C4 /* loginDataManager.swift in Sources */,
 				FF9144652484AFC600C5B746 /* selectColotDataManager.swift in Sources */,
@@ -849,24 +951,30 @@
 				FF91FFE424879D85002C2900 /* newViewController.swift in Sources */,
 				FF8D7C8424800A2400A3E7C4 /* floaTextField.swift in Sources */,
 				FF91446B2484B65300C5B746 /* selectSizeDataManager.swift in Sources */,
+				FF90A0D42488E26E0005FE17 /* basketViewController.swift in Sources */,
 				FF91445C2484A8C000C5B746 /* selectSizePopUp.swift in Sources */,
+				FF90A0DF2488FC9B0005FE17 /* basketItemTableViewCell.swift in Sources */,
 				FF88822F248627D700434F6E /* ViewController.swift in Sources */,
+				FFB1582D2487DBD4005D254C /* heartCollectionViewCell.swift in Sources */,
 				FFDBBF462485E7F400844D44 /* mallItemDataManager.swift in Sources */,
 				FF9144712484C69200C5B746 /* basketDataManager.swift in Sources */,
 				FF9144972485739800C5B746 /* TableViewCell.swift in Sources */,
 				FF8B7DBB2483F8A100DE1B5B /* selectPopUpDelegate.swift in Sources */,
 				FF88824D248648C300434F6E /* categoryViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
+				FF90A0DC2488F3F40005FE17 /* basketListDataManager.swift in Sources */,
 				FF91FFDD24878191002C2900 /* bestViewController.swift in Sources */,
 				FF914493248561F000C5B746 /* bookmarkViewController.swift in Sources */,
 				FF9144792484D56F00C5B746 /* GMStepper.swift in Sources */,
 				FF9144622484A97900C5B746 /* selectSizePopUpDelegate.swift in Sources */,
+				FFB158282487D4E3005D254C /* heartDataManager.swift in Sources */,
 				FF9144742484C6D400C5B746 /* basketResponse.swift in Sources */,
 				FF91447D2484F39F00C5B746 /* mallViewController.swift in Sources */,
 				FF9144682484AFEB00C5B746 /* selectColorResponse.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				FF88823224862A3E00434F6E /* barButtons.swift in Sources */,
 				FF88823D24863E3B00434F6E /* TabBarButtons.swift in Sources */,
+				FFB158262487D0D3005D254C /* heartResponse.swift in Sources */,
 				FF8D7C8E24802CC300A3E7C4 /* registerViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,

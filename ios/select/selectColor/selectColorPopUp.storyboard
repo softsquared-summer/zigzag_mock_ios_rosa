@@ -24,27 +24,32 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy2-0c-jhg">
-                                        <rect key="frame" x="47" y="83" width="42" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                        <state key="normal" title="color1"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy2-0c-jhg">
+                                        <rect key="frame" x="20" y="57" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="color1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectColor1:" destination="CRR-eP-Ww1" eventType="touchUpInside" id="QTA-Gf-v3T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2s-Jn-9vF">
-                                        <rect key="frame" x="46" y="133" width="44" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="color2"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2s-Jn-9vF">
+                                        <rect key="frame" x="20" y="110" width="51" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="color2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectColor2:" destination="CRR-eP-Ww1" eventType="touchUpInside" id="0KI-5s-doU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-8e-o3z">
-                                        <rect key="frame" x="46" y="188" width="44" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="color3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-8e-o3z">
+                                        <rect key="frame" x="20" y="163" width="52" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="color3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectColor3:" destination="CRR-eP-Ww1" eventType="touchUpInside" id="90s-cp-Ghl"/>
                                         </connections>
@@ -52,9 +57,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="zy2-0c-jhg" firstAttribute="leading" secondItem="Lso-2k-Zta" secondAttribute="leading" constant="20" id="5zf-gj-tAi"/>
                                     <constraint firstItem="vOn-6K-ZdV" firstAttribute="leading" secondItem="Lso-2k-Zta" secondAttribute="leading" constant="188" id="ByH-wF-PfB"/>
+                                    <constraint firstItem="Lso-2k-Zta" firstAttribute="bottom" secondItem="Wh9-8e-o3z" secondAttribute="bottom" constant="243" id="Fw9-kO-dd2"/>
+                                    <constraint firstItem="Wh9-8e-o3z" firstAttribute="leading" secondItem="Lso-2k-Zta" secondAttribute="leading" constant="20" id="GCh-MH-d7J"/>
+                                    <constraint firstItem="zy2-0c-jhg" firstAttribute="top" secondItem="Lso-2k-Zta" secondAttribute="top" constant="57" id="HGe-Eb-Em7"/>
                                     <constraint firstItem="Lso-2k-Zta" firstAttribute="trailing" secondItem="vOn-6K-ZdV" secondAttribute="trailing" constant="187" id="NVe-hK-NBa"/>
+                                    <constraint firstItem="Lso-2k-Zta" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="t2s-Jn-9vF" secondAttribute="trailing" constant="350" id="WLw-Dl-b4c"/>
+                                    <constraint firstItem="t2s-Jn-9vF" firstAttribute="leading" secondItem="Lso-2k-Zta" secondAttribute="leading" constant="20" id="aBP-Zt-Pyz"/>
+                                    <constraint firstItem="t2s-Jn-9vF" firstAttribute="top" secondItem="zy2-0c-jhg" secondAttribute="bottom" constant="20" id="gdw-dJ-bR0"/>
                                     <constraint firstItem="vOn-6K-ZdV" firstAttribute="top" secondItem="Lso-2k-Zta" secondAttribute="top" constant="20" id="kDA-ke-nyC"/>
+                                    <constraint firstItem="Lso-2k-Zta" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zy2-0c-jhg" secondAttribute="trailing" constant="345" id="sPk-Rs-6ft"/>
+                                    <constraint firstItem="Wh9-8e-o3z" firstAttribute="top" secondItem="t2s-Jn-9vF" secondAttribute="bottom" constant="20" id="uFV-rg-M4W"/>
+                                    <constraint firstItem="Lso-2k-Zta" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Wh9-8e-o3z" secondAttribute="trailing" constant="342" id="wbf-vB-wrD"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Lso-2k-Zta"/>
                             </view>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="myPageViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRA-2K-b3N">
+                    <rect key="frame" x="0.0" y="44" width="414" height="89"/>
+                    <state key="normal" image="register"/>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="heB-04-xl1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-r9-gCw">
+                    <rect key="frame" x="0.0" y="141" width="414" height="108"/>
+                    <state key="normal" image="my1"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0Z-EF-j2e">
+                    <rect key="frame" x="0.0" y="257" width="414" height="201"/>
+                    <state key="normal" image="my2"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-1G-BSQ">
+                    <rect key="frame" x="0.0" y="466" width="414" height="201"/>
+                    <state key="normal" image="my3"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6x-o3-P6Q">
+                    <rect key="frame" x="0.0" y="675" width="414" height="132"/>
+                    <state key="normal" image="my4"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="OaL-r9-gCw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4no-xy-aS8"/>
+                <constraint firstItem="WRA-2K-b3N" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9Xz-KT-7MK"/>
+                <constraint firstItem="WRA-2K-b3N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ILp-6X-l3y"/>
+                <constraint firstItem="tLq-1G-BSQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LUl-Yx-3rr"/>
+                <constraint firstItem="K6x-o3-P6Q" firstAttribute="top" secondItem="tLq-1G-BSQ" secondAttribute="bottom" constant="8" id="Luc-Mb-Pf5"/>
+                <constraint firstItem="tLq-1G-BSQ" firstAttribute="top" secondItem="x0Z-EF-j2e" secondAttribute="bottom" constant="8" id="MGD-Hm-lj0"/>
+                <constraint firstItem="x0Z-EF-j2e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O0t-Rw-L1d"/>
+                <constraint firstItem="tLq-1G-BSQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bfA-c3-EqN"/>
+                <constraint firstItem="WRA-2K-b3N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cL0-fD-F0P"/>
+                <constraint firstItem="OaL-r9-gCw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hiq-9g-xt6"/>
+                <constraint firstItem="x0Z-EF-j2e" firstAttribute="top" secondItem="OaL-r9-gCw" secondAttribute="bottom" constant="8" id="j9M-TG-iXY"/>
+                <constraint firstItem="K6x-o3-P6Q" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pvQ-NT-7Dz"/>
+                <constraint firstItem="K6x-o3-P6Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qYW-Zf-yCW"/>
+                <constraint firstAttribute="trailing" secondItem="x0Z-EF-j2e" secondAttribute="trailing" id="rN5-5T-3VP"/>
+                <constraint firstItem="OaL-r9-gCw" firstAttribute="top" secondItem="WRA-2K-b3N" secondAttribute="bottom" constant="8" id="wQG-ls-TWs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my1" width="423" height="108"/>
+        <image name="my2" width="423" height="201"/>
+        <image name="my3" width="423" height="201"/>
+        <image name="my4" width="423" height="132"/>
+        <image name="register" width="423" height="89"/>
+    </resources>
+</document>

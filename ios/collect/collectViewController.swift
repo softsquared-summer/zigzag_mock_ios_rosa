@@ -47,8 +47,8 @@ class collectViewController: UIViewController {
         titleLabel.text = "  모아보기".localized
         titleLabel.textAlignment = .left
         titleLabel.sizeToFit()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 25)
-        var titleItem:UIBarButtonItem  = UIBarButtonItem.init(customView: titleLabel)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        let titleItem:UIBarButtonItem  = UIBarButtonItem.init(customView: titleLabel)
         
         let leftButtons:[UIBarButtonItem]? = [titleItem]
         let rightButtons:[UIBarButtonItem]? = [rightBarButtonItem]
@@ -58,7 +58,6 @@ class collectViewController: UIViewController {
     
     @objc func btnTouch(_sender: UIButton){
         let tag:Int! = _sender.tag
-        print(tag)
         let categoryVC = categoryViewController()
         self.navigationController?.pushViewController(categoryVC, animated: true)
         let keyword:String! = buttonImages[tag]

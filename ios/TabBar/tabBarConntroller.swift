@@ -16,6 +16,7 @@ class tabBarConntroller: UITabBarController,UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -26,9 +27,11 @@ class tabBarConntroller: UITabBarController,UITabBarControllerDelegate {
         rank.title = "seocond"
         super.viewWillAppear(animated)
         let main = mainTabViewController()
-        let login = loginViewController()
+        let login = myPageViewController()
         let mall = mallViewController()
+        let heart = heartViewController()
         let collect = collectViewController()
+        let icon5 = UITabBarItem(title: nil, image: UIImage(named: "heart"), selectedImage: UIImage(named: "heart_selected"))
         let icon1 = UITabBarItem(title: nil, image: UIImage(named: "main_icon"), selectedImage: UIImage(named: "main_icon_selected"))
         let icon2 = UITabBarItem(title: nil, image: UIImage(named: "my_icon"), selectedImage: UIImage(named: "my_icon_selected"))
         let icon3 = UITabBarItem(title: nil, image: UIImage(named: "mall"), selectedImage: UIImage(named: "mall_selected"))
@@ -37,14 +40,11 @@ class tabBarConntroller: UITabBarController,UITabBarControllerDelegate {
         login.tabBarItem = icon2
         mall.tabBarItem = icon3
         collect.tabBarItem = icon4
-        let controllers = [main,mall,collect,login]
+        heart.tabBarItem = icon5
+        let controllers = [main,mall,collect,heart,login]
         self.viewControllers = controllers
         
         
-    }
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        print("Should select viewController: \(viewController.title ?? "") ?")
-        return true;
     }
     
     

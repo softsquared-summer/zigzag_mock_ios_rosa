@@ -18,26 +18,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewW-Rp-zpo">
                                 <rect key="frame" x="0.0" y="423" width="414" height="473"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-0z-A4D">
-                                        <rect key="frame" x="50" y="83" width="30" height="30"/>
-                                        <state key="normal" title="L"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-0z-A4D">
+                                        <rect key="frame" x="20" y="57" width="80" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="L">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="pressedDismiss:" destination="cGN-Cv-fFL" eventType="touchUpInside" id="6iu-Dm-KXk"/>
                                             <action selector="selectSize1:" destination="cGN-Cv-fFL" eventType="touchUpInside" id="7CW-qI-qg6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh2-r1-JzV">
-                                        <rect key="frame" x="50" y="133" width="30" height="30"/>
-                                        <state key="normal" title="M"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh2-r1-JzV">
+                                        <rect key="frame" x="20" y="110" width="80" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="M">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectSize2:" destination="cGN-Cv-fFL" eventType="touchUpInside" id="kbs-T8-dUT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-Uy-6IH">
-                                        <rect key="frame" x="50" y="183" width="30" height="30"/>
-                                        <state key="normal" title="S"/>
-                                        <connections>
-                                            <action selector="selectSize3:" destination="cGN-Cv-fFL" eventType="touchUpInside" id="enA-5k-ONI"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사이즈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E5-r4-sNs">
@@ -46,21 +45,32 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-Uy-6IH">
+                                        <rect key="frame" x="20" y="163" width="80" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="S">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectSize3:" destination="cGN-Cv-fFL" eventType="touchUpInside" id="enA-5k-ONI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1jd-Uy-6IH" secondAttribute="trailing" constant="334" id="6iT-bp-fhI"/>
-                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zh2-r1-JzV" secondAttribute="trailing" constant="334" id="7Rl-b7-PcE"/>
+                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1jd-Uy-6IH" secondAttribute="trailing" constant="364" id="8qe-Xx-n7F"/>
+                                    <constraint firstItem="zh2-r1-JzV" firstAttribute="top" secondItem="dHf-0z-A4D" secondAttribute="bottom" constant="20" id="92z-JG-Q6K"/>
                                     <constraint firstItem="0E5-r4-sNs" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="179" id="GMy-04-Fek"/>
                                     <constraint firstItem="0E5-r4-sNs" firstAttribute="top" secondItem="cL7-jm-V4X" secondAttribute="top" constant="20" id="GgX-AZ-ScV"/>
+                                    <constraint firstItem="1jd-Uy-6IH" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="20" id="HPj-LM-LdH"/>
+                                    <constraint firstItem="zh2-r1-JzV" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="20" id="KaD-Ne-RET"/>
+                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dHf-0z-A4D" secondAttribute="trailing" constant="364" id="Km9-w0-W5G"/>
                                     <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" secondItem="0E5-r4-sNs" secondAttribute="trailing" constant="177.5" id="L6E-iV-MZ7"/>
-                                    <constraint firstItem="zh2-r1-JzV" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="50" id="Mbh-zp-xnw"/>
-                                    <constraint firstItem="dHf-0z-A4D" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="50" id="QMA-Je-1re"/>
-                                    <constraint firstItem="zh2-r1-JzV" firstAttribute="top" secondItem="dHf-0z-A4D" secondAttribute="bottom" constant="20" id="b05-lH-Ohx"/>
-                                    <constraint firstItem="1jd-Uy-6IH" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="50" id="hMS-sO-tX2"/>
-                                    <constraint firstItem="dHf-0z-A4D" firstAttribute="top" secondItem="cL7-jm-V4X" secondAttribute="top" constant="83" id="k1F-A3-qDu"/>
-                                    <constraint firstItem="1jd-Uy-6IH" firstAttribute="top" secondItem="zh2-r1-JzV" secondAttribute="bottom" constant="20" id="mDj-Ew-2vv"/>
-                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dHf-0z-A4D" secondAttribute="trailing" constant="334" id="mow-8w-wXT"/>
+                                    <constraint firstItem="dHf-0z-A4D" firstAttribute="leading" secondItem="cL7-jm-V4X" secondAttribute="leading" constant="20" id="WPc-2F-mxd"/>
+                                    <constraint firstItem="dHf-0z-A4D" firstAttribute="top" secondItem="cL7-jm-V4X" secondAttribute="top" constant="57" id="kzh-J5-ao3"/>
+                                    <constraint firstItem="1jd-Uy-6IH" firstAttribute="top" secondItem="zh2-r1-JzV" secondAttribute="bottom" constant="20" id="nNq-Wu-0ts"/>
+                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="bottom" secondItem="1jd-Uy-6IH" secondAttribute="bottom" constant="243" id="owx-D7-Ax3"/>
+                                    <constraint firstItem="cL7-jm-V4X" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zh2-r1-JzV" secondAttribute="trailing" constant="364" id="qs8-5O-uSR"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="cL7-jm-V4X"/>
                             </view>
@@ -81,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFy-gz-BsJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="127"/>
+            <point key="canvasLocation" x="89.855072463768124" y="126.5625"/>
         </scene>
     </scenes>
 </document>

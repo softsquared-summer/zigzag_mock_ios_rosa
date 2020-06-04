@@ -26,10 +26,9 @@ class loginDataManager {
                     print(parameters)
                     if userResponse.code == 100 {
                         mainViewController.presentAlert(title: "환영합니다!", message: "환영합니다!")
-                        UserDefaults.standard.set(parameters["email"], forKey: "user")
                         UserDefaults.standard.set(userResponse.result, forKey: "token")
                     } else if userResponse.code == 201{
-                        UIViewController().presentAlert(title: "error", message: userResponse.message!)
+                        mainViewController.presentAlert(title: "error", message: userResponse.message!)
                     }
                 case .failure:
 //                    mainViewController.titleLabel.text = "서버와의 연결이 원활하지 않습니다."

@@ -11,7 +11,9 @@ import GMStepper
 
 class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDelegate, selectSizePopUpDelegate {
     
+
     override func viewDidLoad() {
+        
         self.price.text = ""
         self.itemView.isHidden = true
         self.numStepper.addTarget(self, action: #selector(self.stepperValueChanged), for: .valueChanged)
@@ -25,6 +27,16 @@ class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDele
         self.size.layer.cornerRadius = 5
         self.basket.layer.cornerRadius = 25
         self.buy.layer.cornerRadius = 25
+        
+        self.color.layer.borderWidth = 2.5
+        self.color.layer.cornerRadius = 6
+        self.color.layer.borderColor = UIColor.systemGray6.cgColor
+        self.color.contentHorizontalAlignment = .left
+        
+        self.size.layer.borderWidth = 2.5
+        self.size.layer.cornerRadius = 6
+        self.size.layer.borderColor = UIColor.systemGray6.cgColor
+        self.size.contentHorizontalAlignment = .left
     }
     
     @IBOutlet weak var itemView: UIView!
@@ -91,13 +103,13 @@ class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDele
     }
     func pressedColorButton(color: String!) {
         self.item_color = color
-        self.color.titleLabel?.text = color
+        self.color.titleLabel?.text = "      "+color
     }
     func pressedSizeButton(size: String) {
         self.item_size = size
-        self.size.titleLabel?.text = size
+        self.size.titleLabel?.text = "      "+size
         self.itemView.isHidden = false
-        var info:String = self.item_color + " / " + self.item_size
+        let info:String = self.item_color + " / " + self.item_size
         self.selectedItemInfo.text = info
         
     }
@@ -108,7 +120,30 @@ class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDele
     
     @objc func stepperValueChanged(stepper: GMStepper) {
         self.num.text = stepper.value as? String
-        self.price.text = self.itemPrice
+        printChars(string: self.itemPrice)
+        let newPrice = stepper.value * Double(t2)!
+        let newPriceInt = Int(newPrice)
+ 
+        self.price.text = String(newPriceInt)+"원"
+        t2 = ""
         
+    }
+    var t2 = ""
+    func printChars(string: String){
+        var str = string
+        if(str.count == 0){
+        }else{
+            if str[str.startIndex] == "," {
+                str.remove(at: str.startIndex)
+                printChars(string: str)
+            }else if str[str.startIndex] == "원" {
+                str.remove(at: str.startIndex)
+                printChars(string: str)
+            }else {
+                t2 =  t2 + String(str[str.startIndex])
+                str.remove(at: str.startIndex)
+                printChars(string: str)
+            }
+        }
     }
 }
