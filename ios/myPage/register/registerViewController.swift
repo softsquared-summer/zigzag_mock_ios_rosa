@@ -52,7 +52,14 @@ class registerViewController: UIViewController , UITextFieldDelegate {
             "is_privacy_agree" : isAgree["is_privacy_agree"] ?? "Y" ,
             "is_alarm_agree" : isAgree["is_alarm_agree"] ?? "Y"
         ]
+        if emailVal.isValidEmail() == false {
+            self.presentAlert(title: "이메일 형식 오류!", message: "올바른 형식의 이메일을 입력해주세요!")
+        }
+        if pwVal.isValidPassword() == false{
+            self.presentAlert(title: "패드워드 형식 오류!", message: "패스워드는 영문,숫자,특수문자 포함 8자 이상입니다!")
+        }
         registerDataManager().getRegister(self, parameters: parameters)
+//        self.navigationController?.popViewController(animated: true)
     }
     var checkBoxes:[BEMCheckBox?] = []
     var isAgree:[String:String?] = [:]
@@ -135,7 +142,6 @@ class registerViewController: UIViewController , UITextFieldDelegate {
     }
     //end editing
     @objc func endEditing(floatTextField: floatTextField){
-        var empty:Bool = false
         floatTextField.layer.borderWidth = 2.0
         floatTextField.layer.cornerRadius = 9.0
         floatTextField.layer.borderColor = UIColor.systemGray4.cgColor
@@ -192,3 +198,15 @@ extension registerViewController: BEMCheckBoxDelegate{
     }
 }
 
+extension String {
+    func isValidEmail() -> Bool {
+        // here, `try!` will always succeed because the pattern is valid
+        let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
+        return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+    }
+    
+    func isValidPassword() -> Bool {
+        let regex = try! NSRegularExpression(pattern: "^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,20}$", options: .caseInsensitive)
+        return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+    }
+}

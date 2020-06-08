@@ -25,9 +25,10 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         ]
         loginDataManager().getUser(self, parameters: parameters)
         
-        if isLogin == true {
-            self.presentAlert(title: "로그인 성공!", message: "환영합니다~!")
+        if emailVal.isValidEmail() == false {
+            self.presentAlert(title: "아이디 오류", message: "잘못된 형식의 아이디 입니다!")
         }
+        
     }
     override func viewDidLoad() {
         

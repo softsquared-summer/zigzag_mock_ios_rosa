@@ -61,7 +61,7 @@ extension rankViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = mallTableView.dequeueReusableCell(withIdentifier: "mall", for: indexPath) as? TableViewCell else { return UITableViewCell() }
         cell.mallImage.image = UIImage(named: "mall_image")
         cell.mall_name.text = malls[indexPath.row].mall_name
-        let rank:String = String(malls[indexPath.row].mall_rank)
+        let _:String = String(malls[indexPath.row].mall_rank)
         cell.rank.text = ranking[indexPath.row]
         if malls[indexPath.row].tags.tag_name != "없음"{
             cell.mall_tag.text = malls[indexPath.row].tags.tag_name
