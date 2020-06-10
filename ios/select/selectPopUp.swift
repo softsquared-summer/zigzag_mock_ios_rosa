@@ -9,7 +9,7 @@
 import UIKit
 import GMStepper
 
-class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDelegate, selectSizePopUpDelegate {
+class selectPopUp: UIViewController, selectPopUpDelegate, selectColorPopUpDelegate, selectSizePopUpDelegate {
     
 
     override func viewDidLoad() {
@@ -118,13 +118,39 @@ class selectPopUp: BaseViewController, selectPopUpDelegate, selectColorPopUpDele
         self.dismiss(animated: false, completion: nil)
     }
     
+    func comma(num: Int) -> String{
+        var point = 0
+        var str = ""
+        
+        var strNum = String(num)
+        point = strNum.count % 3
+
+        let len = strNum.count
+        
+        print("strNum.endIndex : ", strNum[strNum.index(before: strNum.endIndex)])
+        
+        while(point < len) {
+            for i in 0...2 {
+            str =  String(strNum[strNum.index(before: strNum.endIndex)]) + str
+            strNum.remove(at: strNum.index(before: strNum.endIndex))
+            }
+            if strNum != "" {str = "," + str}
+            point += 3
+            //str = 005
+            //strNum = 1203
+        }
+        str = strNum + str
+        
+        return str
+        
+    }
     @objc func stepperValueChanged(stepper: GMStepper) {
         self.num.text = stepper.value as? String
         printChars(string: self.itemPrice)
         let newPrice = stepper.value * Double(t2)!
         let newPriceInt = Int(newPrice)
  
-        self.price.text = String(newPriceInt)+"원"
+        self.price.text = String(comma(num: newPriceInt))+"원"
         t2 = ""
         
     }

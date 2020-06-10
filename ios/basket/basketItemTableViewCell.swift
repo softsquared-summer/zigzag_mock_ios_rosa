@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 class basketItemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var checkBox: BEMCheckBox!
     @IBOutlet weak var ship: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var num: UILabel!
@@ -20,7 +22,11 @@ class basketItemTableViewCell: UITableViewCell {
     @IBOutlet weak var item_image: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.checkBox.onCheckColor = UIColor.white
+        self.checkBox.onTintColor = UIColor.white
+        self.checkBox.offFillColor = UIColor.systemGray4
+        self.checkBox.onFillColor = ColorPalette.zigzagPink
+        self.checkBox.tintColor = UIColor.white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

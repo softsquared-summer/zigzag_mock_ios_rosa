@@ -317,6 +317,7 @@
 				BD9BF17722F9C6CF009E47EB /* UIColor.swift */,
 				BD9BF17922F9C6FF009E47EB /* UIButton.swift */,
 				BD9BF17B22F9C737009E47EB /* UIViewController.swift */,
+				FF91446D2484C61800C5B746 /* DataManager */,
 				BD9BF17F22F9CDEF009E47EB /* String.swift */,
 				FF8D7C8324800A2400A3E7C4 /* floaTextField.swift */,
 			);
@@ -352,7 +353,6 @@
 				BD9BF17122F9C31D009E47EB /* config */,
 				FF889CB52482B4BC00CD72A6 /* select */,
 				FF8AE8592480F4FC003BC692 /* detail */,
-				FF8AE8582480DC08003BC692 /* search */,
 				FF8D7C7E247FE5FF00A3E7C4 /* TabBar */,
 				BD9BF16F22F9C314009E47EB /* Main */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
@@ -424,7 +424,6 @@
 			isa = PBXGroup;
 			children = (
 				FF9144722484C6C700C5B746 /* Entity */,
-				FF91446D2484C61800C5B746 /* DataManager */,
 				FF9144522484A10300C5B746 /* slelectSize */,
 				FF9144512484A0FA00C5B746 /* selectColor */,
 				FF8B7DB82483F88C00DE1B5B /* selectPopUp.swift */,
@@ -449,13 +448,6 @@
 				FF8AE8562480C1FD003BC692 /* registerDataManager.swift */,
 			);
 			path = DataManager;
-			sourceTree = "<group>";
-		};
-		FF8AE8582480DC08003BC692 /* search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = search;
 			sourceTree = "<group>";
 		};
 		FF8AE8592480F4FC003BC692 /* detail */ = {
