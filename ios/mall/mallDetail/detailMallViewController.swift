@@ -11,7 +11,7 @@ import WCLShineButton
 
 class detailMallViewController: UIViewController, UICollectionViewDelegate {
     var mallName = ""
-    
+    let images:[String] = ["반팔8","스커트6","스커트7","스커트8","아우터2","아우터3","아우터4","패딩1","패딩2","스커트","아우터1","데님1","바지2","바지3","바지4","셔츠1","셔츠3","셔츠4","반팔1","반팔2","반팔3","반팔4","반팔5","반팔6","반팔7","스커트2","스커트3","스커트4","스커트5","아우터1","원피스1","원피스2","원피스3","가디건1","가디건2","가디건3","가디건4","가디건5","가디건6"]
     var mall_id:Int? = 0
     var Items:[items] = []
     var favorite:String = ""
@@ -82,7 +82,7 @@ extension detailMallViewController: UICollectionViewDataSource,UICollectionViewD
         cell.item_name.font = UIFont.systemFont(ofSize: 14)
         cell.discount.font = UIFont.systemFont(ofSize: 14)
         cell.price.font = UIFont.boldSystemFont(ofSize: 14)
-        cell.item_image.image = UIImage(named: "스커트")
+        cell.item_image.image = UIImage(named: images[indexPath.row])
         cell.item_name.text = Items[indexPath.item].item_name
         cell.mall_name.text = Items[indexPath.item].mall_name
         cell.mall_name.layer.zPosition = 1

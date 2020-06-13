@@ -9,7 +9,7 @@
 import UIKit
 
 class bestViewController: UIViewController, UICollectionViewDataSource {
-    
+    let images:[String] = ["반팔1","반팔2","반팔3","반팔4","반팔5","반팔6","반팔7","반팔8","스커트6","스커트7","스커트8","아우터2","아우터3","아우터4","패딩1","패딩2","스커트","아우터1","데님1","바지2","바지3","바지4","셔츠1","셔츠3","셔츠4","스커트2","스커트3","스커트4","스커트5","아우터1","원피스1","원피스2","원피스3","가디건1","가디건2","가디건3","가디건4","가디건5","가디건6"]
     var sponItems:[items] = [
         items(item_id: 2, item_category: "상의", item_category_detail: "티셔츠", item_image: nil, is_free_ship: "N", is_heart: "N", mall_name: "오브로밍", item_name: "브이넥 셔링 크롭 반팔", discount: "0%", price: "21,000"),
         items(item_id: 1, item_category: "원피스/세트", item_category_detail: "롱원피스", item_image: nil, is_free_ship: "N", is_heart: "N", mall_name: "기프티박스", item_name: "메기 린넨 스퀘어넥", discount: "0%", price: "15,900"),
@@ -80,7 +80,7 @@ extension bestViewController:UICollectionViewDelegateFlowLayout {
         
         
         cell.item_image.frame = CGRect(x: 0, y: 0, width: 185, height: 225)
-        cell.item_image.image = UIImage(named: "스커트")
+        cell.item_image.image = UIImage(named: images[indexPath.row])
         cell.item_name.text = sectionItem[indexPath.section][indexPath.item].item_name
         cell.mall_name.text = sectionItem[indexPath.section][indexPath.item].mall_name
         cell.mall_name.layer.zPosition = 1

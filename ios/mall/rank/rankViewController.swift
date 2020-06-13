@@ -10,6 +10,7 @@ import UIKit
 
 class rankViewController: UIViewController {
 
+    let images:[String] = ["mall_image","랭킹1","랭킹2","랭킹3","랭킹4","랭킹5","랭킹6","랭킹7","랭킹8","랭킹9","랭킹10","랭킹11","랭킹12","랭킹13","랭킹14"]
     let mallBtn:[String] = ["쵸퍼","소녀나라","밍스","본지샵","시크스튜","라일론","불량소녀"]
     var malls:[mall] = []
     var tags:tag = tag()
@@ -59,7 +60,7 @@ extension rankViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = mallTableView.dequeueReusableCell(withIdentifier: "mall", for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        cell.mallImage.image = UIImage(named: "mall_image")
+        cell.mallImage.image = UIImage(named: images[indexPath.row])
         cell.mall_name.text = malls[indexPath.row].mall_name
         let _:String = String(malls[indexPath.row].mall_rank)
         cell.rank.text = ranking[indexPath.row]
